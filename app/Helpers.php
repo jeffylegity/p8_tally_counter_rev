@@ -1,5 +1,6 @@
 <?php
-                             
+use Carbon\Carbon;
+
 function getLastRecord(){
    $last_record = DB::table('slicing_data')
       ->orderby('date_generated', 'desc')

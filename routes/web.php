@@ -12,7 +12,10 @@
 */
 
 Route::get('/', 'MyCustomAuthController@authChecker');
-Route::get('slicing/common_page','CommonPageController@slicingCommonPage')->name('slicing.common');
+Route::get('slicing/common','CommonPageController@slicingCommonPage')->name('slicing.common');
+Route::get('clear_cache','OptController@clearCache')->name('cache.clear');
+Route::get('increment/{col_selector}/{machine_no}', 'UserFormController@incData')->name('inc_data');
+Route::get('decrement/{col_selector}/{machine_no}', 'UserFormController@decData')->name('dec_data');
 
 Auth::routes([
    'register' => false,
@@ -24,19 +27,15 @@ Auth::routes([
 //route for admin
 Route::group(['middleware' => ['is_admin']], function () {
 
-   Route::get('admin/home', 'HomeController@adminHome')->name('admin.home');
+   Route::get('admin/slicing-input', 'HomeController@adminHome')->name('admin.home');
+   Route::get('admin/generate_record', 'DataGeneratorController@generateSlicingRecord')->name('admin.generate_record');
    
 });
 
 //role == null
 //route for requestor
 Route::group(['middleware' => ['is_user']], function () {
-
-   Route::get('user/home', 'HomeController@userHome')->name('user.home');
-   Route::get('user/generate_record', 'UserFormController@generateRecord')->name('user.generate_record');
-   Route::get('user/increment/{col_selector}', 'UserFormController@incData')->name('user.inc_data');
-   Route::get('user/decrement/{col_selector}', 'UserFormController@decData')->name('user.dec_data');
-
+   Route::get('user/slicing-input', 'HomeController@userHome')->name('user.home');
 });
 
 

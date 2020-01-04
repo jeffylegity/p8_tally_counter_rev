@@ -1,4 +1,4 @@
-@include('includes.admin.header')
-@include('includes.admin.nav')
+@include('includes.slicing.header')
+@include('includes.slicing.nav')
 @yield('content')
-@include('includes.admin.footer')
+@include('includes.slicing.footer')

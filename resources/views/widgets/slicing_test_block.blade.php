@@ -33,7 +33,7 @@
  <div class="col-lg-2">
     <center>
        <h4><b>{{getSL170ModelName()}}</b></h4>
-       <h1><b>{{$data->sl5_actual}}</b></h1>
+       <h1><b>{{$data->sl5_test_block}}</b></h1>
        <h4><b>SL-166</b></h4>
     </center>
  </div> 

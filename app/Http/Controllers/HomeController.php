@@ -26,14 +26,14 @@ class HomeController extends Controller
      */
     public function userHome()
     {
-      if(getLastRecord() == true){
-         return view('pages.user.user_home')->with([
-             'last_record'  =>true,
-             'slicing_data' =>getSlicingData()
-             ]);
-      } else {
-         return view('pages.user.user_home')->with(['last_record'=>false]);
-      }
+        if(getLastRecord() == true){
+            return view('pages.user.user_home')->with([
+                'last_record'  =>true,
+                'slicing_data' =>getSlicingData()
+                ]);
+        } else {
+            return view('pages.user.user_home')->with(['last_record'=>false]);
+        }
 
     }
     /**
@@ -44,7 +44,14 @@ class HomeController extends Controller
 
     public function adminHome()
     {
-        return view('pages.admin.admin_home');
+        if(getLastRecord() == true){
+            return view('pages.admin.admin_home')->with([
+                'last_record'  =>true,
+                'slicing_data' =>getSlicingData()
+                ]);
+         } else {
+            return view('pages.admin.admin_home')->with(['last_record'=>false]);
+         }
     }
     
 }

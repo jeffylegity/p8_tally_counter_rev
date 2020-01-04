@@ -15,34 +15,17 @@
         <img src="{{URL::asset('assets/images/shinetsu.png.png')}}" alt="Shin-Etsu" style="width: 70%; height:60%;">
     </div><br>
     <div class="m-t-40 card-box">
-       <div class="form-group">
-          <h4>Why get premium?</h4>
-          <p>get unlimited requests to you favorite support group anytime anywhere!</p>
-       </div>
-      <div class="form-group">
-         <label>Card Number</label>
-         <input type="text" class="form-control" placeholder="xxx-xx-xxxx">
-      </div>
-      <div class="form-group">
-         <label>Expiry Date</label>
-         <div class="row">
-            <div class="col-md-4">
-               <input type="text" class="form-control" placeholder="MM">
-            </div>
-            <div class="col-md-4">
-               <input type="text" class="form-control" placeholder="YY">
-            </div>
-            <div class="col-md-4">
-               <input type="text" class="form-control" placeholder="CV Code">
-            </div>
-         </div>
-      </div>
-      <div class="form-group" style="display:flex">
-         <button class="btn btn-primary" style="width:100%;" disabled>Php 200.00 (per month)</button>
-      </div>
-      <div class="form-group" style="display:flex">
-         <button class="btn btn-success" style="width:100%;"><i class="mdi mdi-credit-card"></i> Pay</button>
-      </div>
+        <div class="ex-page-content text-center">
+            <div style="color: #00929e;font-size: 98px;font-weight: 700;line-height: 150px; margin-top:-30px;">404</div>
+            <h3 class="font-600" style="color:#034ea2">Page not Found</h3>
+            <p class="text-muted">
+                It's looking like you may have taken a wrong turn. Don't worry it happens to
+                the best of us. You might want to check your internet connection. Here's a little tip that might
+                help you get back on track.
+            </p>
+            <br>
+            <a class="btn" href="javascript:history.back()" style="background-color:#00929e;color:white;"> <i class="mdi mdi-arrow-left-bold-circle-outline"></i> Back</a>
+        </div>
     </div>
 </div> 
 @endsection
