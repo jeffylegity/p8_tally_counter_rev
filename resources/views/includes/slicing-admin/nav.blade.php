@@ -49,7 +49,7 @@
                   <a href="{{route('admin.records')}}" class="waves-effect" ><i class="mdi mdi-file-document-box"></i> <span> Records </span> </a>
                </li>
                <li>
-                  <a href="{{route('admin.records')}}" class="waves-effect" ><i class="mdi mdi-settings-box"></i> <span> Models </span> </a>
+                  <a href="{{route('admin.models')}}" class="waves-effect" ><i class="mdi mdi-settings-box"></i> <span> Models </span> </a>
                </li>
             </ul>
             <div class="clearfix"></div>

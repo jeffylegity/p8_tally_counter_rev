@@ -71,6 +71,14 @@ class DataGeneratorController extends Controller
       ->with([
          'logs' => $logs,
       ]);
-  }
-  
+     }
+     
+     public function showModels(){
+      $models = DB::table('slicing_model')->select('*')
+      ->get();
+      return view('pages.admin.admin_models')
+      ->with([
+         'models' => $models,
+      ]);
+     }
 }

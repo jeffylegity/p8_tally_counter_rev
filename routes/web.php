@@ -29,6 +29,7 @@ Route::group(['middleware' => ['is_admin']], function () {
    Route::get('admin/slicing-input', 'HomeController@adminHome')->name('admin.home');
    Route::get('admin/slicing/records', 'DataGeneratorController@showRecords')->name('admin.records');
    Route::get('admin/slicing/logs/{input_id}', 'DataGeneratorController@showLogs')->name('admin.logs');
+   Route::get('admin/slicing/models', 'DataGeneratorController@showModels')->name('admin.models');
    Route::get('admin/generate_record', 'DataGeneratorController@generateSlicingRecord')->name('admin.generate_record');
    Route::get('admin/save_record/{data_id}', 'DataGeneratorController@saveData')->name('admin.save_record');
    
