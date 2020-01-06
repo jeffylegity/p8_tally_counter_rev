@@ -81,4 +81,74 @@ class DataGeneratorController extends Controller
          'models' => $models,
       ]);
      }
+
+     public function updateModelName(Request $request){
+      $update_model_name = DB::table('slicing_model')->select('*')
+      ->where(['id'=>$request->input('id')])
+      ->update(['model_name'=>$request->input('model_name')]);
+
+         if (!$update_model_name) {
+            toastr()->error('Model name not updated, Please Contact MIS');
+            return redirect()->route('admin.models');
+         } else {
+            toastr()->success('Model name updated');
+            return redirect()->back();
+         }
+     }
+
+     public function incDatas($col_selector,$machine_no){
+      $fetch = DB::table('slicing_data')->select($col_selector)
+         ->where(['data_stored'=>0])->first();
+         foreach ($fetch as $data) {
+            $data_inc      = $data+1;
+            $update_data   = DB::table('slicing_data')->update([
+               $col_selector => $data_inc,
+            ]);
+         }
+      $logs = dataGetter();
+      foreach ($logs as $log) {
+         $data = array(
+            'data_id'      => $log->id,
+            'machine_no'   => $machine_no,
+            'action'       => '+1',
+            'type'         => 'plan',
+            'created_at'   => now(),
+         );
+         $insert_logs = DB::table('slicing_logs')->insert($data);
+         if (!$insert_logs) {
+            tostr()->error('Data not inserted');
+            return redirect()->back();
+         } else {
+            return redirect()->back();
+         }
+      }
+   }
+   
+   public function decDatas($col_selector,$machine_no){
+      $fetch = DB::table('slicing_data')->select($col_selector)
+         ->where(['data_stored'=>0])->first();
+         foreach ($fetch as $data) {
+            $data_inc      = $data-1;
+            $update_data   = DB::table('slicing_data')->update([
+               $col_selector => $data_inc,
+            ]);
+         }
+      $logs = dataGetter();
+      foreach ($logs as $log) {
+         $data = array(
+            'data_id'      => $log->id,
+            'machine_no'   => $machine_no,
+            'action'       => '-1',
+            'type'         => 'plan',
+            'created_at'   => now(),
+         );
+         $insert_logs = DB::table('slicing_logs')->insert($data);
+         if (!$insert_logs) {
+            tostr()->error('Data not inserted');
+            return redirect()->back();
+         } else {
+            return redirect()->back();
+         }
+      }
+   }
 }

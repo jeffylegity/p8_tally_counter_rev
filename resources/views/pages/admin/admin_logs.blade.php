@@ -14,6 +14,7 @@
                         <tr style="text-align:center;">
                           <th>Input ID</th>
                           <th>Machine No.</th>
+                          <th>Input Type</th>
                           <th>Action Taken</th>
                           <th>View</th>
                         </tr>
@@ -23,8 +24,9 @@
                              <tr style="text-align:center">
                                 <td>000{{$log->data_id}}</td>
                                 <td>{{$log->machine_no}}</td>
+                                <td>{{$log->type}}</td>
                                 <td>{{$log->action}}</td>
-                                <td>{{Carbon\Carbon::parse($log->created_at)->format('M d Y - H:i:A')}}</td>
+                                <td>{{Carbon\Carbon::parse($log->created_at)->format('H:i:A - M d Y')}}</td>
                              </tr>                            
                           @endforeach
                       </tbody>
