@@ -435,6 +435,7 @@ class ComposerStaticInitd24f4ba6a141cf55d9584ac5956c7518
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\CommonPageController' => __DIR__ . '/../..' . '/app/Http/Controllers/CommonPageController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\DataGeneratorController' => __DIR__ . '/../..' . '/app/Http/Controllers/DataGeneratorController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\MyCustomAuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/MyCustomAuthController.php',
         'App\\Http\\Controllers\\OptController' => __DIR__ . '/../..' . '/app/Http/Controllers/OptController.php',

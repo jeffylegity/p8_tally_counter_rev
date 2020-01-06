@@ -7,7 +7,7 @@
   <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
   <meta name="author" content="Coderthemes">
   <link rel="shortcut icon" href="assets/images/favicon.ico">
-  <title>Web Service Request</title>
+  <title>P8 Tally Counter</title>
   <link href={{URL::asset('assets/plugins/datatables/dataTables.bootstrap4.min.css')}} rel="stylesheet" type="text/css" />
   <link href={{URL::asset('assets/plugins/datatables/buttons.bootstrap4.min.css')}} rel="stylesheet" type="text/css" />
   <link href={{URL::asset('assets/plugins/datatables/responsive.bootstrap4.min.css')}} rel="stylesheet" type="text/css" />

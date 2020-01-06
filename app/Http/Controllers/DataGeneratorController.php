@@ -40,5 +40,37 @@ class DataGeneratorController extends Controller
            return redirect()->route('admin.home');
         }
      }
+
+     public function saveData($data_id){
+         $save_record = DB::table('slicing_data')->select('*')
+         ->where(['id'=>$data_id])
+         ->update(['data_stored'=>1]);
+
+         if (!$save_record) {
+            toastr()->error('Record not saved, Please contact MIS');
+            return redirect()->back();
+         } else {
+            toastr()->success('Record Saved');
+            return redirect()->back();
+         }
+
+     }
+
+     public function showRecords(){
+         $records = DB::table('slicing_data')->select('*')->get();
+         return view('pages.admin.admin_records')
+         ->with([
+            'records' => $records,
+         ]);
+     }
+
+     public function showLogs($input_id){
+      $logs = DB::table('slicing_logs')->select('*')
+      ->where(['data_id'=>$input_id])->get();
+      return view('pages.admin.admin_logs')
+      ->with([
+         'logs' => $logs,
+      ]);
+  }
   
 }

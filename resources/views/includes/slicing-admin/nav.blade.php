@@ -46,8 +46,11 @@
                   <a href="{{route('admin.home')}}" class="waves-effect" ><i class="mdi mdi-keyboard-close"></i> <span> Tally Input </span> </a>
                </li>
                <li>
-                  <a href="{{route('admin.home')}}" class="waves-effect" ><i class="mdi mdi-file-document-box"></i> <span> Records </span> </a>
-             </li>
+                  <a href="{{route('admin.records')}}" class="waves-effect" ><i class="mdi mdi-file-document-box"></i> <span> Records </span> </a>
+               </li>
+               <li>
+                  <a href="{{route('admin.records')}}" class="waves-effect" ><i class="mdi mdi-settings-box"></i> <span> Models </span> </a>
+               </li>
             </ul>
             <div class="clearfix"></div>
          </div>

@@ -2,8 +2,8 @@
 use Carbon\Carbon;
 
 function getLastRecord(){
-   $last_record = DB::table('slicing_data')
-      ->orderby('date_generated', 'desc')
+   $last_record = DB::table('slicing_data')->select('*')
+      ->latest('date_generated', 'desc')
       ->get();
 
    foreach ($last_record as $record) {
@@ -16,8 +16,8 @@ function getLastRecord(){
 }
 
 function getSlicingData(){
-   $slicing_data = DB::table('slicing_data')
-      ->orderby('date_generated', 'desc')
+   $slicing_data = DB::table('slicing_data')->select('*')
+      ->where(['data_stored'=>0])
       ->get();
    return $slicing_data;
 }

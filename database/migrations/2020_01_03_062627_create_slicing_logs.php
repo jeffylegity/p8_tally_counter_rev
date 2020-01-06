@@ -17,6 +17,8 @@ class CreateSlicingLogs extends Migration
             $table->bigIncrements('id');
             $table->integer('data_id');
             $table->string('machine_no');
+            $table->string('action');
+            $table->string('type');
             $table->dateTime('created_at');
         });
     }
