@@ -32,7 +32,7 @@
                            </div>
                            <div class="col-lg-2">
                               <center>
-                                 <h4><b>{{getSL166ModelName()}}</b></h4>
+                                 <h4><b>{{getSL167ModelName()}}</b></h4>
                                  <input type="text" class="form-control" style="text-align:center;" name="sl2_target" value="{{$data->sl2_target}}">
                               </center>
                               <center>
@@ -41,7 +41,7 @@
                            </div>
                            <div class="col-lg-2">
                               <center>
-                                 <h4><b>{{getSL166ModelName()}}</b></h4>
+                                 <h4><b>{{getSL168ModelName()}}</b></h4>
                                  <input type="text" class="form-control" style="text-align:center;" name="sl3_target" value="{{$data->sl3_target}}">
                               </center>
                               <center>
@@ -50,7 +50,7 @@
                            </div>  
                            <div class="col-lg-2">
                               <center>
-                                 <h4><b>{{getSL166ModelName()}}</b></h4>
+                                 <h4><b>{{getSL169ModelName()}}</b></h4>
                                  <input type="text" class="form-control" style="text-align:center;" name="sl4_target" value="{{$data->sl4_target}}">
                               </center>
                               <center>
@@ -59,14 +59,14 @@
                            </div> 
                            <div class="col-lg-2">
                               <center>
-                                 <h4><b>{{getSL166ModelName()}}</b></h4>
+                                 <h4><b>{{getSL170ModelName()}}</b></h4>
                                  <input type="text" class="form-control" style="text-align:center;" name="sl5_target" value="{{$data->sl5_target}}">
                               </center>
                               <center>
                                  <h4><b>SL-170</b></h4>
                               </center>
                            </div> 
-                           <div class="col-lg-12" style="display:flex;align-items: center;justify-content:center;">
+                           <div class="col-lg-12" style="display:flex;align-items:center;justify-content:center;">
                               <button type="submit" class="btn btn-success"><i class="mdi mdi-pencil"></i> Update</button>
                            </div>
                         </div>

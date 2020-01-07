@@ -10,7 +10,7 @@
          </center>
          <br>
          <div class="alert alert-danger" style="background-color:#01939e;color:white;">
-            <h3 style="text-align:center;"><b>1st Machining Slicing</b></h3>
+            <h3 style="text-align:center;"><b>1st Machining Slicing - Area 1</b></h3>
          </div>
          <div class="card-box">
             <div class="form-group">
