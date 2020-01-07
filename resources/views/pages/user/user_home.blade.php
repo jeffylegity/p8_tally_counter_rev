@@ -1,13 +1,13 @@
 @extends('layouts.slicing-layout')
 @section('content')
-    <div class="content-page">
+   <br>
       <div class="content">
         <div class="container-fluid">
           <div class="row">
             @if ($last_record == true)
             <div class="col-xl-12">
                <div class="alert alert-danger" style="background-color:#01939e;color:white;text-align:center;">
-                  1st Machining Slicing
+                  <h1>1st Machining Slicing</h1>
                </div>
                <div class="card-box">
                   <form>
@@ -171,7 +171,14 @@
                                     <i class="mdi mdi-plus"></i>
                                  </a>
                               </center>
-                           </div> 
+                              <br><br>
+                           </div>
+                           <div class="col-lg-12" style="display:flex;align-items:center;justify-content:center;">
+                              <a class="btn btn-danger" href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="mdi mdi-arrow-left-bold"></i> Logout</a>
+                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                 @csrf
+                              </form>
+                           </div>
                         </div><br>
                      </div>
                      @endforeach

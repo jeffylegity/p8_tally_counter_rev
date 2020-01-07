@@ -31,10 +31,9 @@ Route::group(['middleware' => ['is_admin']], function () {
    Route::get('admin/slicing/logs/{input_id}', 'DataGeneratorController@showLogs')->name('admin.logs');
    Route::get('admin/slicing/models', 'DataGeneratorController@showModels')->name('admin.models');
    Route::post('admin/slicing/update_model_name', 'DataGeneratorController@updateModelName')->name('admin.update_model_name');
+   Route::post('admin/slicing/update_plan', 'DataGeneratorController@updatePlan')->name('admin.update_plan');
    Route::get('admin/generate_record', 'DataGeneratorController@generateSlicingRecord')->name('admin.generate_record');
    Route::get('admin/save_record/{data_id}', 'DataGeneratorController@saveData')->name('admin.save_record');
-   Route::get('increments/{col_selector}/{machine_no}', 'DataGeneratorController@incDatas')->name('a_inc_data');
-   Route::get('decrements/{col_selector}/{machine_no}', 'DataGeneratorController@decDatas')->name('a_dec_data');
    
 });
 
