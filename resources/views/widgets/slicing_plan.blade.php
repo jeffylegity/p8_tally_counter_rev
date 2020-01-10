@@ -1,3 +1,8 @@
+@if (getLastRecord() == false)
+<div class="col-lg-12" style="display:flex;align-items:center;justify-content:center;">
+   <a class="btn btn-danger">Data not available</a>
+</div>
+@else
 @foreach ($plan as $data)
  <div class="col-lg-2">
     <h2><b>Plan</b></h2>
@@ -38,3 +43,4 @@
     </center>
  </div> 
 @endforeach
+@endif
