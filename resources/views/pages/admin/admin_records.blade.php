@@ -8,13 +8,12 @@
                <div class="card-box">
                   <h4 class="header-title mt-0 m-b-30">Tally Input Record(s)</h4>
                   <div class="table-responsive">
-                    <table id="datatable-buttons" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                    <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
                       <thead>
                         <tr style="text-align:center;">
                           <th>Input ID</th>
                           <th>Date Generated</th>
                           <th>Shift</th>
-                          <th>View</th>
                           <th>View</th>
                         </tr>
                       </thead>
@@ -22,11 +21,8 @@
                           @foreach ($records as $data)
                              <tr style="text-align:center">
                                 <td>000{{$data->id}}</td>
-                                <td>{{Carbon\Carbon::parse($data->date_generated)->format('M d Y - H:i:A')}}</td>
+                                <td>{{Carbon\Carbon::parse($data->created_at)->format('H:i:A - M d Y')}}</td>
                                 <td>{{$data->shift}}</td>
-                                <td>
-                                  <a href="" class="btn btn-success"><i class="mdi mdi-eye"></i> Summary</a>
-                                </td>
                                 <td>
                                   <a href="{{route('admin.logs',$data->id)}}" class="btn btn-primary"><i class="mdi mdi-eye"></i> Logs</a>
                                </td>

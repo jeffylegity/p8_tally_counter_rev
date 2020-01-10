@@ -191,6 +191,12 @@
                   Data not generated, Please contact your planner
                </div>
             </div>
+            <div class="col-lg-12" style="display:flex;align-items:center;justify-content:center;">
+               <a class="btn btn-danger" href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="mdi mdi-arrow-left-bold"></i> Logout</a>
+               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                  @csrf
+               </form>
+            </div>
            @endif
           </div>
       </div>

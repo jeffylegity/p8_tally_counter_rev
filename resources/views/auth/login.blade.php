@@ -24,7 +24,7 @@
             @csrf
           <div class="form-group">
             <div class="col-xs-12">
-                <input placeholder="Employee Number" id="username" type="username" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus>
+                <input placeholder="Emp.No / Username" id="username" type="username" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus>
                 @error('username')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
@@ -42,7 +42,7 @@
                 @enderror
             </div>
           </div>
-          <div class="form-group ">
+          {{-- <div class="form-group ">
             <div class="col-xs-12">
               <div class="checkbox checkbox-custom">
                 <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
@@ -51,7 +51,7 @@
                 </label>
               </div>
             </div>
-          </div>
+          </div> --}}
           <div class="form-group text-center m-t-30">
             <div class="col-xs-12">
               <button class="btn btn-bordred btn-block waves-effect waves-light" type="submit"

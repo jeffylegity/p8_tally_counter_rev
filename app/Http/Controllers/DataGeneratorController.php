@@ -57,7 +57,8 @@ class DataGeneratorController extends Controller
      }
 
      public function showRecords(){
-         $records = DB::table('slicing_data')->select('*')->get();
+         $records = DB::table('slicing_data')
+         ->orderBy('date_generated','desc')->get();
          return view('pages.admin.admin_records')
          ->with([
             'records' => $records,
@@ -65,21 +66,22 @@ class DataGeneratorController extends Controller
      }
 
      public function showLogs($input_id){
-      $logs = DB::table('slicing_logs')->select('*')
-      ->where(['data_id'=>$input_id])->get();
-      return view('pages.admin.admin_logs')
-      ->with([
-         'logs' => $logs,
-      ]);
+         $logs = DB::table('slicing_logs')->select('*')
+         ->where(['data_id'=>$input_id])
+         ->orderBy('created_at','desc')->get();
+         return view('pages.admin.admin_logs')
+         ->with([
+            'logs' => $logs,
+         ]);
      }
      
      public function showModels(){
-      $models = DB::table('slicing_model')->select('*')
-      ->get();
-      return view('pages.admin.admin_models')
-      ->with([
-         'models' => $models,
-      ]);
+         $models = DB::table('slicing_model')->select('*')
+         ->get();
+         return view('pages.admin.admin_models')
+         ->with([
+            'models' => $models,
+         ]);
      }
 
      public function updateModelName(Request $request){
