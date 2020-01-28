@@ -24,7 +24,7 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>{{getSL166ModelName()}}</b></h4>
-                                 <input type="text" class="form-control" style="text-align:center;" name="sl1_target" value="{{$data->sl1_target}}">
+                                 <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl166_target" value="{{$data->sl166_target}}">
                               </center>
                               <center>
                                  <h4><b>SL-166</b></h4>
@@ -33,7 +33,7 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>{{getSL167ModelName()}}</b></h4>
-                                 <input type="text" class="form-control" style="text-align:center;" name="sl2_target" value="{{$data->sl2_target}}">
+                                 <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl167_target" value="{{$data->sl167_target}}">
                               </center>
                               <center>
                                  <h4><b>SL-167</b></h4>
@@ -42,7 +42,7 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>{{getSL168ModelName()}}</b></h4>
-                                 <input type="text" class="form-control" style="text-align:center;" name="sl3_target" value="{{$data->sl3_target}}">
+                                 <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl168_target" value="{{$data->sl168_target}}">
                               </center>
                               <center>
                                  <h4><b>SL-168</b></h4>
@@ -51,7 +51,7 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>{{getSL169ModelName()}}</b></h4>
-                                 <input type="text" class="form-control" style="text-align:center;" name="sl4_target" value="{{$data->sl4_target}}">
+                                 <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl169_target" value="{{$data->sl169_target}}">
                               </center>
                               <center>
                                  <h4><b>SL-169</b></h4>
@@ -60,7 +60,7 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>{{getSL170ModelName()}}</b></h4>
-                                 <input type="text" class="form-control" style="text-align:center;" name="sl5_target" value="{{$data->sl5_target}}">
+                                 <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl170_target" value="{{$data->sl170_target}}">
                               </center>
                               <center>
                                  <h4><b>SL-170</b></h4>
@@ -72,10 +72,10 @@
                         </div>
                      </form><br>
                      <hr style="border:1px solid black;">
-                        {{AsyncWidget::SlicingActual()}}
+                        {{AsyncWidget::SlicingActualE()}}
                      <br>
                      <hr style="border:1px solid black;">
-                        {{AsyncWidget::SlicingTestBlock()}}
+                        {{AsyncWidget::SlicingTestBlockE()}}
                      <br>
                   </div>
                   @endforeach

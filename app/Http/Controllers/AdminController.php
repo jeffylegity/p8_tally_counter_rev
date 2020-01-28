@@ -5,31 +5,36 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 
-class DataGeneratorController extends Controller
+class AdminController extends Controller
 {
     public function generateSlicingRecord(){
         $data = array(
-           'sl1_actual'        =>0,
-           'sl1_target'        =>0,
-           'sl1_test_block'    =>0,
-           'sl2_actual'        =>0,
-           'sl2_target'        =>0,
-           'sl2_test_block'    =>0,
-           'sl3_actual'        =>0,
-           'sl3_target'        =>0,
-           'sl3_test_block'    =>0,
-           'sl4_actual'        =>0,
-           'sl4_target'        =>0,
-           'sl4_test_block'    =>0,
-           'sl5_actual'        =>0,
-           'sl5_target'        =>0,
-           'sl5_test_block'    =>0,
+           'sl166_actual'        =>0,
+           'sl166_target'        =>0,
+           'sl166_test_block'    =>0,
+
+           'sl167_actual'        =>0,
+           'sl167_target'        =>0,
+           'sl167_test_block'    =>0,
+
+           'sl168_actual'        =>0,
+           'sl168_target'        =>0,
+           'sl168_test_block'    =>0,
+
+           'sl169_actual'        =>0,
+           'sl169_target'        =>0,
+           'sl169_test_block'    =>0,
+
+           'sl170_actual'        =>0,
+           'sl170_target'        =>0,
+           'sl170_test_block'    =>0,
+
            'date_generated'    =>now(),
            'shift'             =>getShift(),
            'data_stored'       =>0
         );
   
-        $generate_record = DB::table('slicing_data')
+        $generate_record = DB::table('slicing_data_area1')
            ->insert($data);
            
         if (!$generate_record) {
@@ -42,7 +47,7 @@ class DataGeneratorController extends Controller
      }
 
      public function saveData($data_id){
-         $save_record = DB::table('slicing_data')->select('*')
+         $save_record = DB::table('slicing_data_area1')->select('*')
          ->where(['id'=>$data_id])
          ->update(['data_stored'=>1]);
 
@@ -57,7 +62,7 @@ class DataGeneratorController extends Controller
      }
 
      public function showRecords(){
-         $records = DB::table('slicing_data')
+         $records = DB::table('slicing_data_area1')
          ->orderBy('date_generated','desc')->get();
          return view('pages.admin.admin_records')
          ->with([
@@ -99,14 +104,14 @@ class DataGeneratorController extends Controller
      }
 
      public function updatePlan(Request $request){
-      $update_plan = DB::table('slicing_data')->select('*')
+      $update_plan = DB::table('slicing_data_area1')->select('*')
       ->where(['id'=>$request->input('data_id')])
       ->update([
-         'sl1_target'=>$request->input('sl1_target'),
-         'sl2_target'=>$request->input('sl2_target'),
-         'sl3_target'=>$request->input('sl3_target'),
-         'sl4_target'=>$request->input('sl4_target'),
-         'sl5_target'=>$request->input('sl5_target'),
+         'sl166_target'=>$request->input('sl166_target'),
+         'sl167_target'=>$request->input('sl167_target'),
+         'sl168_target'=>$request->input('sl168_target'),
+         'sl169_target'=>$request->input('sl169_target'),
+         'sl170_target'=>$request->input('sl170_target'),
          ]);
 
          if (!$update_plan) {

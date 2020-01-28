@@ -3,11 +3,10 @@
 namespace App\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
-use DB;
 
-class SlicingPlan extends AbstractWidget
+class SlicingTestBlockF extends AbstractWidget
 {
-    public $reloadTimeout = 5;
+    public $reloadTimeout = 20;
     /**
      * The configuration array.
      *
@@ -21,9 +20,9 @@ class SlicingPlan extends AbstractWidget
      */
     public function run()
     {
-        return view('widgets.slicing_plan', [
+        return view('widgets.slicing_test_block_f', [
             'config' => $this->config,
-            'plan'   => dataGetter(),
+            'test_block'   => getFshiftLatest(),
         ]);
     }
 

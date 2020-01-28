@@ -7,9 +7,9 @@
             @if ($last_record == true)
             <div class="col-xl-12">
                <div class="alert alert-danger" style="background-color:#01939e;color:white;text-align:center;">
-                  <h1>1st Machining Slicing</h1>
+                  <h1>1st Machining Slicing - Area 1</h1>
                </div>
-               <div class="card-box">
+               <div class="card-box" style="margin-top:-20px;">
                   <form>
                      @foreach ($slicing_data as $data)
                      <div class="form-group">
@@ -24,13 +24,13 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>{{getSL166ModelName()}}</b></h4>
-                                 <h2><b>{{$data->sl1_actual}}</b></h2>
+                                 <h2 style="font-size:400%"><b>{{$data->sl166_actual}}</b></h2>
                               </center>
                               <center>
-                                 <a href="{{route('dec_data',['col_selector'=>'sl1_actual','machine_no'=>'SL-166','type'=>'actual'])}}" class="btn btn-danger btn-sm">
+                                 <a href="{{route('dec_data',['col_selector'=>'sl166_actual','machine_no'=>'SL-166','type'=>'actual'])}}" class="btn btn-danger btn-sm">
                                     <i class="mdi mdi-minus"></i>
                                  </a>
-                                 <a href="{{route('inc_data',['col_selector'=>'sl1_actual','machine_no'=>'SL-166','type'=>'actual'])}}" class="btn btn-primary btn-sm">
+                                 <a href="{{route('inc_data',['col_selector'=>'sl166_actual','machine_no'=>'SL-166','type'=>'actual'])}}" class="btn btn-primary btn-sm">
                                     <i class="mdi mdi-plus"></i>
                                  </a>
                                  <h4><b>SL-166</b></h4>
@@ -39,13 +39,13 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>{{getSL167ModelName()}}</b></h4>
-                                 <h2><b>{{$data->sl2_actual}}</b></h2>
+                                 <h2 style="font-size:400%"><b>{{$data->sl167_actual}}</b></h2>
                               </center>
                               <center>
-                                 <a href="{{route('dec_data',['col_selector'=>'sl2_actual','machine_no'=>'SL-167','type'=>'actual'])}}" class="btn btn-danger btn-sm">
+                                 <a href="{{route('dec_data',['col_selector'=>'sl167_actual','machine_no'=>'SL-167','type'=>'actual'])}}" class="btn btn-danger btn-sm">
                                     <i class="mdi mdi-minus"></i>
                                  </a>
-                                 <a href="{{route('inc_data',['col_selector'=>'sl2_actual','machine_no'=>'SL-167','type'=>'actual'])}}" class="btn btn-primary btn-sm">
+                                 <a href="{{route('inc_data',['col_selector'=>'sl167_actual','machine_no'=>'SL-167','type'=>'actual'])}}" class="btn btn-primary btn-sm">
                                     <i class="mdi mdi-plus"></i>
                                  </a>
                                  <h4><b>SL-167</b></h4>
@@ -54,13 +54,13 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>{{getSL168ModelName()}}</b></h4>
-                                 <h2><b>{{$data->sl3_actual}}</b></h2>
+                                 <h2 style="font-size:400%"><b>{{$data->sl168_actual}}</b></h2>
                               </center>
                               <center>
-                                 <a href="{{route('dec_data',['col_selector'=>'sl3_actual','machine_no'=>'SL-168','type'=>'actual'])}}" class="btn btn-danger btn-sm">
+                                 <a href="{{route('dec_data',['col_selector'=>'sl168_actual','machine_no'=>'SL-168','type'=>'actual'])}}" class="btn btn-danger btn-sm">
                                     <i class="mdi mdi-minus"></i>
                                  </a>
-                                 <a href="{{route('inc_data',['col_selector'=>'sl3_actual','machine_no'=>'SL-168','type'=>'actual'])}}" class="btn btn-primary btn-sm">
+                                 <a href="{{route('inc_data',['col_selector'=>'sl168_actual','machine_no'=>'SL-168','type'=>'actual'])}}" class="btn btn-primary btn-sm">
                                     <i class="mdi mdi-plus"></i>
                                  </a>
                                  <h4><b>SL-168</b></h4>
@@ -69,13 +69,13 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>{{getSL169ModelName()}}</b></h4>
-                                 <h2><b>{{$data->sl4_actual}}</b></h2>
+                                 <h2 style="font-size:400%"><b>{{$data->sl169_actual}}</b></h2>
                               </center>
                               <center>
-                                 <a href="{{route('dec_data',['col_selector'=>'sl4_actual','machine_no'=>'SL-169','type'=>'actual'])}}" class="btn btn-danger btn-sm">
+                                 <a href="{{route('dec_data',['col_selector'=>'sl169_actual','machine_no'=>'SL-169','type'=>'actual'])}}" class="btn btn-danger btn-sm">
                                     <i class="mdi mdi-minus"></i>
                                  </a>
-                                 <a href="{{route('inc_data',['col_selector'=>'sl4_actual','machine_no'=>'SL-169','type'=>'actual'])}}" class="btn btn-primary btn-sm">
+                                 <a href="{{route('inc_data',['col_selector'=>'sl169_actual','machine_no'=>'SL-169','type'=>'actual'])}}" class="btn btn-primary btn-sm">
                                     <i class="mdi mdi-plus"></i>
                                  </a>
                                  <h4><b>SL-169</b></h4>
@@ -84,13 +84,13 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>{{getSL170ModelName()}}</b></h4>
-                                 <h2><b>{{$data->sl5_actual}}</b></h2>
+                                 <h2 style="font-size:400%"><b>{{$data->sl170_actual}}</b></h2>
                               </center>
                               <center>
-                                 <a href="{{route('dec_data',['col_selector'=>'sl5_actual','machine_no'=>'SL-170','type'=>'actual'])}}" class="btn btn-danger btn-sm">
+                                 <a href="{{route('dec_data',['col_selector'=>'sl170_actual','machine_no'=>'SL-170','type'=>'actual'])}}" class="btn btn-danger btn-sm">
                                     <i class="mdi mdi-minus"></i>
                                  </a>
-                                 <a href="{{route('inc_data',['col_selector'=>'sl5_actual','machine_no'=>'SL-170','type'=>'actual'])}}" class="btn btn-primary btn-sm">
+                                 <a href="{{route('inc_data',['col_selector'=>'sl170_actual','machine_no'=>'SL-170','type'=>'actual'])}}" class="btn btn-primary btn-sm">
                                     <i class="mdi mdi-plus"></i>
                                  </a>
                                  <h4><b>SL-170</b></h4>
@@ -105,13 +105,13 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>SL-166</b></h4>
-                                 <h2><b>{{$data->sl1_test_block}}</b></h2>
+                                 <h2 style="font-size:400%"><b>{{$data->sl166_test_block}}</b></h2>
                               </center>
                               <center>
-                                 <a href="{{route('dec_data',['col_selector'=>'sl1_test_block','machine_no'=>'SL-166','type'=>'test block'])}}" class="btn btn-danger btn-sm">
+                                 <a href="{{route('dec_data',['col_selector'=>'sl166_test_block','machine_no'=>'SL-166','type'=>'test block'])}}" class="btn btn-danger btn-sm">
                                     <i class="mdi mdi-minus"></i>
                                  </a>
-                                 <a href="{{route('inc_data',['col_selector'=>'sl1_test_block','machine_no'=>'SL-166','type'=>'test block'])}}" class="btn btn-primary btn-sm">
+                                 <a href="{{route('inc_data',['col_selector'=>'sl166_test_block','machine_no'=>'SL-166','type'=>'test block'])}}" class="btn btn-primary btn-sm">
                                     <i class="mdi mdi-plus"></i>
                                  </a>
                               </center>
@@ -119,13 +119,13 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>SL-167</b></h4>
-                                 <h2><b>{{$data->sl2_test_block}}</b></h2>
+                                 <h2 style="font-size:400%"><b>{{$data->sl167_test_block}}</b></h2>
                               </center>
                               <center>
-                                 <a href="{{route('dec_data',['col_selector'=>'sl2_test_block','machine_no'=>'SL-167','type'=>'test block'])}}" class="btn btn-danger btn-sm">
+                                 <a href="{{route('dec_data',['col_selector'=>'sl167_test_block','machine_no'=>'SL-167','type'=>'test block'])}}" class="btn btn-danger btn-sm">
                                     <i class="mdi mdi-minus"></i>
                                  </a>
-                                 <a href="{{route('inc_data',['col_selector'=>'sl2_test_block','machine_no'=>'SL-167','type'=>'test block'])}}" class="btn btn-primary btn-sm">
+                                 <a href="{{route('inc_data',['col_selector'=>'sl167_test_block','machine_no'=>'SL-167','type'=>'test block'])}}" class="btn btn-primary btn-sm">
                                     <i class="mdi mdi-plus"></i>
                                  </a>
                               </center>
@@ -133,13 +133,13 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>SL-168</b></h4>
-                                 <h2><b>{{$data->sl3_test_block}}</b></h2>
+                                 <h2 style="font-size:400%"><b>{{$data->sl168_test_block}}</b></h2>
                               </center>
                               <center>
-                                 <a href="{{route('dec_data',['col_selector'=>'sl3_test_block','machine_no'=>'SL-168','type'=>'test block'])}}" class="btn btn-danger btn-sm">
+                                 <a href="{{route('dec_data',['col_selector'=>'sl168_test_block','machine_no'=>'SL-168','type'=>'test block'])}}" class="btn btn-danger btn-sm">
                                     <i class="mdi mdi-minus"></i>
                                  </a>
-                                 <a href="{{route('inc_data',['col_selector'=>'sl3_test_block','machine_no'=>'SL-168','type'=>'test block'])}}" class="btn btn-primary btn-sm">
+                                 <a href="{{route('inc_data',['col_selector'=>'sl168_test_block','machine_no'=>'SL-168','type'=>'test block'])}}" class="btn btn-primary btn-sm">
                                     <i class="mdi mdi-plus"></i>
                                  </a>
                               </center>
@@ -147,13 +147,13 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>SL-169</b></h4>
-                                 <h2><b>{{$data->sl4_test_block}}</b></h2>
+                                 <h2 style="font-size:400%"><b>{{$data->sl169_test_block}}</b></h2>
                               </center>
                               <center>
-                                 <a href="{{route('dec_data',['col_selector'=>'sl4_test_block','machine_no'=>'SL-169','type'=>'test block'])}}" class="btn btn-danger btn-sm">
+                                 <a href="{{route('dec_data',['col_selector'=>'sl169_test_block','machine_no'=>'SL-169','type'=>'test block'])}}" class="btn btn-danger btn-sm">
                                     <i class="mdi mdi-minus"></i>
                                  </a>
-                                 <a href="{{route('inc_data',['col_selector'=>'sl4_test_block','machine_no'=>'SL-169','type'=>'test block'])}}" class="btn btn-primary btn-sm">
+                                 <a href="{{route('inc_data',['col_selector'=>'sl169_test_block','machine_no'=>'SL-169','type'=>'test block'])}}" class="btn btn-primary btn-sm">
                                     <i class="mdi mdi-plus"></i>
                                  </a>
                               </center>
@@ -161,13 +161,13 @@
                            <div class="col-lg-2">
                               <center>
                                  <h4><b>SL-170</b></h4>
-                                 <h2><b>{{$data->sl5_test_block}}</b></h2>
+                                 <h2 style="font-size:400%"><b>{{$data->sl170_test_block}}</b></h2>
                               </center>
                               <center>
-                                 <a href="{{route('dec_data',['col_selector'=>'sl5_test_block','machine_no'=>'SL-170','type'=>'test block'])}}" class="btn btn-danger btn-sm">
+                                 <a href="{{route('dec_data',['col_selector'=>'sl170_test_block','machine_no'=>'SL-170','type'=>'test block'])}}" class="btn btn-danger btn-sm">
                                     <i class="mdi mdi-minus"></i>
                                  </a>
-                                 <a href="{{route('inc_data',['col_selector'=>'sl5_test_block','machine_no'=>'SL-170','type'=>'test block'])}}" class="btn btn-primary btn-sm">
+                                 <a href="{{route('inc_data',['col_selector'=>'sl170_test_block','machine_no'=>'SL-170','type'=>'test block'])}}" class="btn btn-primary btn-sm">
                                     <i class="mdi mdi-plus"></i>
                                  </a>
                               </center>
@@ -177,7 +177,11 @@
                               <a class="btn btn-danger" href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="mdi mdi-arrow-left-bold"></i> Logout</a>
                               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                  @csrf
-                              </form>
+                              </form>&ensp;&ensp;&ensp;
+							  <button class="btn btn-success" onClick="window.location.reload();">
+								<i class="mdi mdi-refresh"></i>
+								Refresh Page
+							  </button>
                            </div>
                         </div><br>
                      </div>
@@ -195,7 +199,11 @@
                <a class="btn btn-danger" href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="mdi mdi-arrow-left-bold"></i> Logout</a>
                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                   @csrf
-               </form>
+               </form>&ensp;&ensp;&ensp;
+			   <button class="btn btn-success" onClick="window.location.reload();">
+				  <i class="mdi mdi-refresh"></i>
+					Refresh Page
+			   </button>
             </div>
            @endif
           </div>

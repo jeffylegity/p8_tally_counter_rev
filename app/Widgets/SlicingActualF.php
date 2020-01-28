@@ -4,9 +4,9 @@ namespace App\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
 
-class SlicingActual extends AbstractWidget
+class SlicingActualF extends AbstractWidget
 {
-    public $reloadTimeout = 5;
+    public $reloadTimeout = 20;
     /**
      * The configuration array.
      *
@@ -20,9 +20,9 @@ class SlicingActual extends AbstractWidget
      */
     public function run()
     {
-        return view('widgets.slicing_actual', [
+        return view('widgets.slicing_actual_f', [
             'config' => $this->config,
-            'actual'   => dataGetter(),
+            'actual'   => getEshiftLatest(),
         ]);
     }
 

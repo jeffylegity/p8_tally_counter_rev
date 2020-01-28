@@ -21,7 +21,7 @@
                           @foreach ($records as $data)
                              <tr style="text-align:center">
                                 <td>000{{$data->id}}</td>
-                                <td>{{Carbon\Carbon::parse($data->created_at)->format('H:i:A - M d Y')}}</td>
+                                <td>{{Carbon\Carbon::parse($data->date_generated)->format('H:i:A - M d Y')}}</td>
                                 <td>{{$data->shift}}</td>
                                 <td>
                                   <a href="{{route('admin.logs',$data->id)}}" class="btn btn-primary"><i class="mdi mdi-eye"></i> Logs</a>

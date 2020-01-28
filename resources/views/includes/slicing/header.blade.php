@@ -4,26 +4,77 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
-  <meta name="author" content="Coderthemes">
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
 
   <title>Plant8 Tally Counter</title>
-
-  <link rel="stylesheet" href="{{URL::asset('assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.css')}}">
-  <link rel="stylesheet" href="{{URL::asset('assets/plugins/select2/css/select2.min.css')}}">
-  <link rel="stylesheet" href="{{URL::asset('assets/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css')}}">
-  <link rel="stylesheet" href="{{URL::asset('assets/plugins/switchery/switchery.min.css')}}">
-  <link rel="stylesheet" href="{{URL::asset('assets/plugins/timepicker/bootstrap-timepicker.min.css')}}">
-  <link rel="stylesheet" href="{{URL::asset('assets/plugins/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css')}}">
-  <link rel="stylesheet" href="{{URL::asset('assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')}}">
-  <link rel="stylesheet" href="{{URL::asset('assets/plugins/bootstrap-daterangepicker/daterangepicker.css')}}">
 
   <link rel="stylesheet" href="{{URL::asset('assets/css/bootstrap.min.css')}}">
   <link rel="stylesheet" href="{{URL::asset('assets/css/icons.css')}}">
   <link rel="stylesheet" href="{{URL::asset('assets/css/style.css')}}">
 
-  <script src="{{URL::asset('assets/js/modernizr.min.js')}}"></script>
-  @toastr_css
+  <style>
+      #plan {  
+      display: block;
+      position: relative;
+      height:100%;
+      width:100%;
+      }
+
+      #plan::after {
+      content: "";
+      background:url("{{asset('assets/images/watermark/plan.png')}}");
+      background-repeat: no-repeat;
+      background-position: center center;
+      opacity: 0.2;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 1;  
+      height:100%;
+      width:100%;
+      }
+
+      #actual {  
+      display: block;
+      position: relative;
+      height:100%;
+      width:100%;
+      }
+
+      #actual::after {
+      content: "";
+      background:url("{{asset('assets/images/watermark/actual.png')}}");
+      background-repeat: no-repeat;
+      background-position: center center;
+      opacity: 0.2;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 1;  
+      height:100%;
+      width:100%;
+      }
+ 
+      #testblock {  
+      display: block;
+      position: relative;
+      height:100%;
+      width:100%;
+      }
+
+      #testblock::after {
+      content: "";
+      background:url("{{asset('assets/images/watermark/testblock.png')}}");
+      background-repeat: no-repeat;
+      background-position: center center;
+      opacity: 0.2;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 1;  
+      height:100%;
+      width:100%;
+      }
+  </style>
+  
 </head>
-<body class="fixed-left" style="background-color:#ebeff2;">
+<body style="background-color:#ebeff2;">
