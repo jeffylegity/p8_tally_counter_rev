@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSlicingModel extends Migration
+class CreateSlicingModelArea2 extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,8 @@ class CreateSlicingModel extends Migration
      */
     public function up()
     {
-        Schema::create('slicing_model', function (Blueprint $table) {
+        Schema::create('slicing_model_area2', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('model_name');
-            $table->string('machine_no');
             $table->timestamps();
         });
     }
@@ -28,6 +26,6 @@ class CreateSlicingModel extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('slicing_model');
+        Schema::dropIfExists('slicing_model_area2');
     }
 }

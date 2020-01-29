@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSlicingLogs extends Migration
+class CreateSlicingLogsArea3 extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class CreateSlicingLogs extends Migration
      */
     public function up()
     {
-        Schema::create('slicing_logs', function (Blueprint $table) {
+        Schema::create('slicing_logs_area3', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('data_id');
-            $table->string('machine_no');
-            $table->string('action');
-            $table->string('type');
-            $table->dateTime('created_at');
+            $table->timestamps();
         });
     }
 
@@ -30,6 +26,6 @@ class CreateSlicingLogs extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('slicing_logs');
+        Schema::dropIfExists('slicing_logs_area3');
     }
 }
