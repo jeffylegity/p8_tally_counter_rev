@@ -33,6 +33,12 @@ class CreateSlicingDataArea1 extends Migration
             $table->string('sl168_test_block')->nullable();
             $table->string('sl169_test_block')->nullable();
             $table->string('sl170_test_block')->nullable();
+
+            $table->string('sl166_model')->nullable();
+            $table->string('sl167_model')->nullable();
+            $table->string('sl168_model')->nullable();
+            $table->string('sl169_model')->nullable();
+            $table->string('sl170_model')->nullable();
             
             $table->dateTime('date_generated')->nullable();
             $table->string('shift')->nullable();

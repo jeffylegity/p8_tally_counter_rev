@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="{{URL::asset('assets/css/icons.css')}}">
   <link rel="stylesheet" href="{{URL::asset('assets/css/style.css')}}">
 
-  <style>
+  {{-- <style>
       #plan {  
       display: block;
       position: relative;
@@ -74,7 +74,7 @@
       height:100%;
       width:100%;
       }
-  </style>
+  </style> --}}
   
 </head>
 <body style="background-color:#ebeff2;">

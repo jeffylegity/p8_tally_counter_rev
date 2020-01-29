@@ -1,27 +1,116 @@
 <?php
 use Carbon\Carbon;
 
-function getLastRecord(){
-   $last_record = DB::table('slicing_data_area1')->select('*')
-      ->latest('date_generated', 'desc')
-      ->get();
+//Slicing Area 1
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+function getLatestArea1(){
+   $get_latest_area1 = DB::table('slicing_data_area1')->orderBy('id','desc')
+   ->limit(1)->get();
 
-   foreach ($last_record as $record) {
-      if($record->data_stored == 0){
-         return true;
-      } else {
-         return false;
-      }
-   }
+   return $get_latest_area1;
 }
 
-function getSlicingData(){
-   $slicing_data = DB::table('slicing_data_area1')->select('*')
-      ->where(['data_stored'=>0])
-      ->get();
-   return $slicing_data;
+function getEshiftLatestArea1(){
+   $get_e_latest = DB::table('slicing_data_area1')->orderBy('id','desc')
+   ->where([
+      'shift'  => 'E'
+   ])->limit(1)->get();
+
+   return $get_e_latest;
 }
 
+function getFshiftLatestArea1(){
+   $get_f_latest = DB::table('slicing_data_area1')->orderBy('id','desc')
+   ->where([
+      'shift'  => 'F'
+   ])->limit(1)->get();
+
+   return $get_f_latest;
+}
+
+//Slicing Area 2
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+function getLatestArea2(){
+   $get_latest_area2 = DB::table('slicing_data_area2')->orderBy('id','desc')
+   ->limit(1)->get();
+
+   return $get_latest_area2;
+}
+
+function getEshiftLatestArea2(){
+   $get_e_latest = DB::table('slicing_data_area2')->orderBy('id','desc')
+   ->where([
+      'shift'  => 'E'
+   ])->limit(1)->get();
+
+   return $get_e_latest;
+}
+
+function getFshiftLatestArea2(){
+   $get_f_latest = DB::table('slicing_data_area2')->orderBy('id','desc')
+   ->where([
+      'shift'  => 'F'
+   ])->limit(1)->get();
+
+   return $get_f_latest;
+}
+
+//Slicing Area 3
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+function getLatestArea3(){
+   $get_latest_area3 = DB::table('slicing_data_area3')->orderBy('id','desc')
+   ->limit(1)->get();
+
+   return $get_latest_area3;
+}
+
+function getEshiftLatestArea3(){
+   $get_e_latest = DB::table('slicing_data_area3')->orderBy('id','desc')
+   ->where([
+      'shift'  => 'E'
+   ])->limit(1)->get();
+
+   return $get_e_latest;
+}
+
+function getFshiftLatestArea3(){
+   $get_f_latest = DB::table('slicing_data_area3')->orderBy('id','desc')
+   ->where([
+      'shift'  => 'F'
+   ])->limit(1)->get();
+
+   return $get_f_latest;
+}
+
+//Slicing Area 4
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+function getLatestArea4(){
+   $get_latest_area4 = DB::table('slicing_data_area4')->orderBy('id','desc')
+   ->limit(1)->get();
+
+   return $get_latest_area4;
+}
+
+function getEshiftLatestArea4(){
+   $get_e_latest = DB::table('slicing_data_area4')->orderBy('id','desc')
+   ->where([
+      'shift'  => 'E'
+   ])->limit(1)->get();
+
+   return $get_e_latest;
+}
+
+function getFshiftLatestArea4(){
+   $get_f_latest = DB::table('slicing_data_area4')->orderBy('id','desc')
+   ->where([
+      'shift'  => 'F'
+   ])->limit(1)->get();
+
+   return $get_f_latest;
+}
+
+//Get Shift function
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 function getShift(){
    $now  = Carbon::now('Asia/Manila');
    $time = $now->format('H:A');
@@ -32,6 +121,8 @@ function getShift(){
    }
 }
 
+//Area 1Model name getter function
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 function getSL166ModelName(){
    $sl166_model_name = DB::table('slicing_model')->select('*')
       ->where(['id'=>1])
@@ -78,29 +169,46 @@ function getSL170ModelName(){
    }
 }
 
-function dataGetter(){
-   $get_plan = DB::table('slicing_data_area1')
-   ->where([
-       'data_stored' => 0
-   ])->get();
+// function getLastRecord(){
+//    $last_record = DB::table('slicing_data_area1')->select('*')
+//       ->latest('date_generated', 'desc')
+//       ->get();
 
-   return $get_plan;
-}
+//    foreach ($last_record as $record) {
+//       if($record->data_stored == 0){
+//          return true;
+//       } else {
+//          return false;
+//       }
+//    }
+// }
 
-function getEshiftLatest(){
-   $get_e_latest = DB::table('slicing_data_area1')->orderBy('id','desc')
-   ->where([
-      'shift'  => 'E'
-   ])->limit(1)->get();
+// function getSlicingData(){
+//    $slicing_data = DB::table('slicing_data_area1')->select('*')
+//       ->where(['data_stored'=>0])
+//       ->get();
+//    return $slicing_data;
+// }
 
-   return $get_e_latest;
-}
+// function dataGetter(){
+//    $get_plan = DB::table('slicing_data_area1')
+//    ->where([
+//        'data_stored' => 0
+//    ])->get();
 
-function getFshiftLatest(){
-   $get_e_latest = DB::table('slicing_data_area1')->orderBy('id','desc')
-   ->where([
-      'shift'  => 'F'
-   ])->limit(1)->get();
+//    return $get_plan;
+// }
 
-   return $get_e_latest;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
