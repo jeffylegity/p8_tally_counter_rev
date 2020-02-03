@@ -24,7 +24,7 @@ class SlicingDataArea2F extends AbstractWidget
 
         return view('widgets.slicing_data_area2_f', [
             'config'    => $this->config,
-            'record'    =>getEshiftLatest(),
+            'record'    =>getFshiftLatestArea2(),
         ]);
     }
 

@@ -4,7 +4,7 @@ namespace App\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
 
-class SlicingDataArea2E extends AbstractWidget
+class SlicingAdminDataArea2 extends AbstractWidget
 {
    public $reloadTimeout = 20;
     /**
@@ -22,9 +22,9 @@ class SlicingDataArea2E extends AbstractWidget
     {
         //
 
-        return view('widgets.slicing_data_area2_e', [
+        return view('widgets.slicing_admin_data_area2', [
             'config'    => $this->config,
-            'record'    =>getEshiftLatestArea2(),
+            'record'    =>getLatestArea2(),
         ]);
     }
 
@@ -32,7 +32,7 @@ class SlicingDataArea2E extends AbstractWidget
     {
       return[
          'element'   => 'div',
-         'attributes'=> 'class="col-lg-6"'
+         'attributes'=> 'class="col-lg-12"'
      ];
     }
 }

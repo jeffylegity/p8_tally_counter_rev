@@ -3,14 +3,14 @@
     <div class="content-page">
       <div class="content">
         <div class="container-fluid">
-            @if (getLatestArea1() == '[]')
+            @if (getLatestArea2() == '[]')
                <div class="col-xl-12">
                   <div class="alert alert-danger" style="background-color:#ff5b5b;color:white;">
                      No data, please generate
                   </div>
                </div>
                <div class="col-xl-12">
-                  <a href="{{route('admin.generate_record.area1')}}" class="btn btn-primary">
+                  <a href="{{route('admin.generate_record.area2')}}" class="btn btn-primary">
                      <i class="mdi mdi-file-document-box"></i>
                      Generate Data
                   </a>
@@ -22,12 +22,12 @@
                   <div class="col-xl-12">
                      <div class="card-box">
                         <div>
-                           <a href="{{route('admin.save_record.area1',$data->id)}}" class="btn btn-danger"><i class="mdi mdi-content-save"></i> Save Record</a>
+                           <a href="{{route('admin.save_record.area2',$data->id)}}" class="btn btn-danger"><i class="mdi mdi-content-save"></i> Save Record</a>
                            <a href="{{route('cache.clear')}}" class="btn btn-primary"><i class="mdi mdi-broom"></i> Clear Cache</a>
                         </div>
                         <div class="form-group">
                            <hr style="border:1px solid black;">
-                           <form action="{{route('admin.update_plan.area1')}}" method="POST">
+                           <form action="{{route('admin.update_plan.area2')}}" method="POST">
                               @csrf
                               <input type="hidden" name="data_id" value="{{$data->id}}">
                               <div class="row">
@@ -37,46 +37,92 @@
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSL166ModelName()}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl166_target" value="{{$data->sl166_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl156_target" value="{{$data->sl156_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>SL-166</b></h4>
+                                       <h4><b>SL-156</b></h4>
                                     </center>
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSL167ModelName()}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl167_target" value="{{$data->sl167_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl161_target" value="{{$data->sl161_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>SL-167</b></h4>
+                                       <h4><b>SL-161</b></h4>
                                     </center>
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSL168ModelName()}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl168_target" value="{{$data->sl168_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl162_target" value="{{$data->sl162_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>SL-168</b></h4>
+                                       <h4><b>SL-162</b></h4>
                                     </center>
                                  </div>  
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSL169ModelName()}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl169_target" value="{{$data->sl169_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl163_target" value="{{$data->sl163_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>SL-169</b></h4>
+                                       <h4><b>SL-163</b></h4>
                                     </center>
                                  </div> 
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSL170ModelName()}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl170_target" value="{{$data->sl170_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl164_target" value="{{$data->sl164_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>SL-170</b></h4>
+                                       <h4><b>SL-164</b></h4>
+                                    </center>
+                                 </div> 
+                                 <div class="col-lg-2"></div>
+                                 <div class="col-lg-2">
+                                    <center>
+                                       <h4><b>{{getSL166ModelName()}}</b></h4>
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl171_target" value="{{$data->sl171_target}}">
+                                    </center>
+                                    <center>
+                                       <h4><b>SL-171</b></h4>
+                                    </center>
+                                 </div>
+                                 <div class="col-lg-2">
+                                    <center>
+                                       <h4><b>{{getSL167ModelName()}}</b></h4>
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl172_target" value="{{$data->sl172_target}}">
+                                    </center>
+                                    <center>
+                                       <h4><b>SL-172</b></h4>
+                                    </center>
+                                 </div>
+                                 <div class="col-lg-2">
+                                    <center>
+                                       <h4><b>{{getSL168ModelName()}}</b></h4>
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl179_target" value="{{$data->sl179_target}}">
+                                    </center>
+                                    <center>
+                                       <h4><b>SL-179</b></h4>
+                                    </center>
+                                 </div>  
+                                 <div class="col-lg-2">
+                                    <center>
+                                       <h4><b>{{getSL169ModelName()}}</b></h4>
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl180_target" value="{{$data->sl180_target}}">
+                                    </center>
+                                    <center>
+                                       <h4><b>SL-180</b></h4>
+                                    </center>
+                                 </div> 
+                                 <div class="col-lg-2">
+                                    <center>
+                                       <h4><b>{{getSL170ModelName()}}</b></h4>
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl181_target" value="{{$data->sl181_target}}">
+                                    </center>
+                                    <center>
+                                       <h4><b>SL-181</b></h4>
                                     </center>
                                  </div> 
                                  <div class="col-lg-12" style="display:flex;align-items:center;justify-content:center;">
@@ -110,7 +156,7 @@
                                     </div>
                                  </div>
                               @endif
-                                 {{AsyncWidget::SlicingAdminDataArea1()}}
+                                 {{AsyncWidget::SlicingAdminDataArea2()}}
                               <br>
                            </div>
                         </div>
@@ -123,7 +169,7 @@
                      </div>
                   </div>
                   <div class="col-xl-12">
-                     <a href="{{route('admin.generate_record')}}" class="btn btn-primary">
+                     <a href="{{route('admin.generate_record.area2')}}" class="btn btn-primary">
                         <i class="mdi mdi-file-document-box"></i>
                         Generate Data
                      </a>

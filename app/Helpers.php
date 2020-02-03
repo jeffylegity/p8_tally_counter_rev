@@ -1,11 +1,12 @@
 <?php
 use Carbon\Carbon;
-
 //Slicing Area 1
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 function getLatestArea1(){
    $get_latest_area1 = DB::table('slicing_data_area1')->orderBy('id','desc')
-   ->limit(1)->get();
+   ->where([
+      'data_stored' => 0
+   ])->limit(1)->get();
 
    return $get_latest_area1;
 }
@@ -32,7 +33,9 @@ function getFshiftLatestArea1(){
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 function getLatestArea2(){
    $get_latest_area2 = DB::table('slicing_data_area2')->orderBy('id','desc')
-   ->limit(1)->get();
+   ->where([
+      'data_stored' => 0
+   ])->limit(1)->get();
 
    return $get_latest_area2;
 }
@@ -59,7 +62,9 @@ function getFshiftLatestArea2(){
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 function getLatestArea3(){
    $get_latest_area3 = DB::table('slicing_data_area3')->orderBy('id','desc')
-   ->limit(1)->get();
+   ->where([
+      'data_stored' => 0
+   ])->limit(1)->get();
 
    return $get_latest_area3;
 }
@@ -121,10 +126,10 @@ function getShift(){
    }
 }
 
-//Area 1Model name getter function
+//Area 1 Model name getter function
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 function getSL166ModelName(){
-   $sl166_model_name = DB::table('slicing_model')->select('*')
+   $sl166_model_name = DB::table('slicing_model_area1')->select('*')
       ->where(['id'=>1])
       ->get();
    foreach ($sl166_model_name as $model) {
@@ -134,7 +139,7 @@ function getSL166ModelName(){
 }
 
 function getSL167ModelName(){
-   $sl167_model_name = DB::table('slicing_model')->select('*')
+   $sl167_model_name = DB::table('slicing_model_area1')->select('*')
       ->where(['id'=>2])
       ->get();
    foreach ($sl167_model_name as $model) {
@@ -143,7 +148,7 @@ function getSL167ModelName(){
 }
 
 function getSL168ModelName(){
-   $sl168_model_name = DB::table('slicing_model')->select('*')
+   $sl168_model_name = DB::table('slicing_model_area1')->select('*')
       ->where(['id'=>3])
       ->get();
    foreach ($sl168_model_name as $model) {
@@ -152,7 +157,7 @@ function getSL168ModelName(){
 }
 
 function getSL169ModelName(){
-   $sl169_model_name = DB::table('slicing_model')->select('*')
+   $sl169_model_name = DB::table('slicing_model_area1')->select('*')
       ->where(['id'=>4])
       ->get();
    foreach ($sl169_model_name as $model) {
@@ -161,10 +166,104 @@ function getSL169ModelName(){
 }
 
 function getSL170ModelName(){
-   $sl170_model_name = DB::table('slicing_model')->select('*')
+   $sl170_model_name = DB::table('slicing_model_area1')->select('*')
       ->where(['id'=>5])
       ->get();
    foreach ($sl170_model_name as $model) {
+      return $model->model_name;
+   }
+}
+
+//Area 2 Model name getter function
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+function getSL156ModelName(){
+   $sl156_model_name = DB::table('slicing_model_area2')->select('*')
+      ->where(['id'=>1])
+      ->get();
+   foreach ($sl156_model_name as $model) {
+      $var = $model->model_name;
+      return $var;
+   }
+}
+
+function getSL161ModelName(){
+   $sl161_model_name = DB::table('slicing_model_area2')->select('*')
+      ->where(['id'=>2])
+      ->get();
+   foreach ($sl161_model_name as $model) {
+      return $model->model_name;
+   }
+}
+
+function getSL162ModelName(){
+   $sl162_model_name = DB::table('slicing_model_area2')->select('*')
+      ->where(['id'=>3])
+      ->get();
+   foreach ($sl162_model_name as $model) {
+      return $model->model_name;
+   }
+}
+
+function getSL163ModelName(){
+   $sl163_model_name = DB::table('slicing_model_area2')->select('*')
+      ->where(['id'=>4])
+      ->get();
+   foreach ($sl163_model_name as $model) {
+      return $model->model_name;
+   }
+}
+
+function getSL164ModelName(){
+   $sl164_model_name = DB::table('slicing_model_area2')->select('*')
+      ->where(['id'=>5])
+      ->get();
+   foreach ($sl164_model_name as $model) {
+      return $model->model_name;
+   }
+}
+
+function getSL171ModelName(){
+   $sl171_model_name = DB::table('slicing_model_area2')->select('*')
+      ->where(['id'=>6])
+      ->get();
+   foreach ($sl171_model_name as $model) {
+      $var = $model->model_name;
+      return $var;
+   }
+}
+
+function getSL172ModelName(){
+   $sl172_model_name = DB::table('slicing_model_area2')->select('*')
+      ->where(['id'=>7])
+      ->get();
+   foreach ($sl172_model_name as $model) {
+      return $model->model_name;
+   }
+}
+
+function getSL179ModelName(){
+   $sl179_model_name = DB::table('slicing_model_area2')->select('*')
+      ->where(['id'=>8])
+      ->get();
+   foreach ($sl179_model_name as $model) {
+      return $model->model_name;
+   }
+}
+
+function getSL180ModelName(){
+   $sl180_model_name = DB::table('slicing_model_area2')->select('*')
+      ->where(['id'=>9])
+      ->get();
+   foreach ($sl180_model_name as $model) {
+      return $model->model_name;
+   }
+}
+
+function getSL181ModelName(){
+   $sl181_model_name = DB::table('slicing_model_area2')->select('*')
+      ->where(['id'=>10])
+      ->get();
+   foreach ($sl181_model_name as $model) {
       return $model->model_name;
    }
 }
@@ -190,14 +289,7 @@ function getSL170ModelName(){
 //    return $slicing_data;
 // }
 
-// function dataGetter(){
-//    $get_plan = DB::table('slicing_data_area1')
-//    ->where([
-//        'data_stored' => 0
-//    ])->get();
 
-//    return $get_plan;
-// }
 
 
 

@@ -75,6 +75,11 @@
       width:100%;
       }
   </style> --}}
+  <style>
+     td{
+        border:2px solid black;
+     }
+  </style>
   
 </head>
 <body style="background-color:#ebeff2;">

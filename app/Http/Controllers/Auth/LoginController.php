@@ -51,8 +51,14 @@ class LoginController extends Controller
         {
             if (auth()->user()->role == 1) {
                 return redirect()->route('admin.home');
-            }elseif (auth()->user()->role == null) {
-               return redirect()->route('user.home');
+            }elseif (auth()->user()->role == null && auth()->user()->area == 1) {
+               return redirect()->route('user.home.area1');
+            }elseif (auth()->user()->role == null && auth()->user()->area == 2) {
+               return redirect()->route('user.home.area2');
+            }elseif (auth()->user()->role == null && auth()->user()->area == 3) {
+               return redirect()->route('user.home.area3');
+            }elseif (auth()->user()->role == null && auth()->user()->area == 4) {
+               return redirect()->route('user.home.area4');
             }
         }else{
             return redirect()->route('login')->with('error','Username And Password Are Wrong.');

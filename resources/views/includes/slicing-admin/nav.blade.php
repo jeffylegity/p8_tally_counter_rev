@@ -2,7 +2,7 @@
   <div id="wrapper">
     <div class="topbar">
       <div class="topbar-left" style="border-top: 7px solid #034ea2;">
-        <a href="{{route('user.home')}}" class="logo">
+        <a href="{{route('admin.home')}}" class="logo">
           <img src="{{URL::asset('assets/images/shinetsu.png.png')}}" alt="Shin-Etsu" style="width: 70%; height:60%;">
         </a>
       </div>
@@ -42,14 +42,56 @@
       <div class="sidebar-inner slimscrollleft">
          <div id="sidebar-menu">
             <ul>
-               <li>
-                  <a href="{{route('admin.home')}}" class="waves-effect" ><i class="mdi mdi-keyboard-close"></i> <span> Tally Input </span> </a>
+               <li class="has_sub">
+                  <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-keyboard"></i> <span> Tally Counter</span></a>
+                  <ul class="list-unstyled">
+                     <li>              
+                        <a href="{{route('admin.home')}}" class="waves-effect" ><span> Area 1 </span> </a>
+                     </li>
+                     <li>              
+                        <a href="{{route('admin.area2')}}" class="waves-effect" ><span> Area 2 </span> </a>
+                     </li>
+                     <li>              
+                        <a href="#" class="waves-effect" ><span> Area 3 </span> </a>
+                     </li>
+                     <li>              
+                        <a href="#" class="waves-effect" ><span> Area 4 </span> </a>
+                     </li>
+                  </ul>
+              </li>
+              <li class="has_sub">
+                  <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-file-document-box"></i> <span> Records</span></a>
+                  <ul class="list-unstyled">
+                     <li>              
+                        <a href="{{route('admin.records.area1')}}" class="waves-effect" ><span> Area 1 </span> </a>
+                     </li>
+                     <li>              
+                        <a href="{{route('admin.records.area2')}}" class="waves-effect" ><span> Area 2 </span> </a>
+                     </li>
+                     <li>              
+                        <a href="#" class="waves-effect" ><span> Area 3 </span> </a>
+                     </li>
+                     <li>              
+                        <a href="#" class="waves-effect" ><span> Area 4 </span> </a>
+                     </li>
+                  </ul>
                </li>
-               <li>
-                  <a href="{{route('admin.records')}}" class="waves-effect" ><i class="mdi mdi-file-document-box"></i> <span> Records </span> </a>
-               </li>
-               <li>
-                  <a href="{{route('admin.models')}}" class="waves-effect" ><i class="mdi mdi-settings-box"></i> <span> Models </span> </a>
+               <li class="has_sub">
+                  <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-settings-box"></i> <span> Models</span></a>
+                  <ul class="list-unstyled">
+                     <li>              
+                        <a href="{{route('admin.models.area1')}}" class="waves-effect" ><span> Area 1 </span> </a>
+                     </li>
+                     <li>              
+                        <a href="{{route('admin.models.area2')}}" class="waves-effect" ><span> Area 2 </span> </a>
+                     </li>
+                     <li>              
+                        <a href="#" class="waves-effect" ><span> Area 3 </span> </a>
+                     </li>
+                     <li>              
+                        <a href="#" class="waves-effect" ><span> Area 4 </span> </a>
+                     </li>
+                  </ul>
                </li>
             </ul>
             <div class="clearfix"></div>

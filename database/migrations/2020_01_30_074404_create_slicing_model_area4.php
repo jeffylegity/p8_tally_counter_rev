@@ -15,6 +15,8 @@ class CreateSlicingModelArea4 extends Migration
     {
         Schema::create('slicing_model_area4', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('model_name');
+            $table->string('machine_no');
             $table->timestamps();
         });
     }

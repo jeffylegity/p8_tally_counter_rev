@@ -15,7 +15,11 @@ class CreateSlicingLogsArea2 extends Migration
     {
         Schema::create('slicing_logs_area2', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
+            $table->integer('data_id');
+            $table->string('machine_no');
+            $table->string('action');
+            $table->string('type');
+            $table->dateTime('created_at');
         });
     }
 

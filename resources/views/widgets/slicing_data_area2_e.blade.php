@@ -1,10 +1,17 @@
 <br><br><br>
+@if (getEshiftLatestArea2() == '[]')
+    <div class="alert alert-danger" style="background-color:#ff5b5b;color:white;">
+       <h1>
+         Data not yet generated
+       </h1>
+    </div>
+@else
 <div class="card-header" style="background-color:#034ea2;color:white;">
    <center>
       <h4 style="font-size:200%">
          <b>
-            @foreach($eShiftdate = getFshiftLatest1(); as $shift)
-             (Area 1 - E Shift / {{Carbon\Carbon::parse($shift->date_generated)->format('M d, Y')}})
+            @foreach($eShiftdate = getEshiftLatestArea2(); as $shift)
+             (Area 2 - E Shift / {{Carbon\Carbon::parse($shift->date_generated)->format('M d, Y')}})
             @endforeach
          </b>
       </h4>
@@ -28,74 +35,74 @@
                     <tbody>
                         @foreach ($record as $data)
                         <tr style="text-align:center;">
-                           <td><h4 style="font-size:200%"><b>SL-166</b></h4></td>
-                           <td><h4 style="font-size:200%"><b>{{getSL166ModelName()}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl166_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl166_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl166_test_block}}</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-156</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>{{getSL156ModelName()}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl156_target}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl156_actual}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl156_test_block}}</b></h4></td>
                         </tr>   
                         <tr style="text-align:center;">
-                           <td><h4 style="font-size:200%"><b>SL-167</b></h4></td>
-                           <td><h4 style="font-size:200%"><b>{{getSL167ModelName()}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl167_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl167_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl167_test_block}}</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-161</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>{{getSL161ModelName()}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl161_target}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl161_actual}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl161_test_block}}</b></h4></td>
                         </tr>   
                         <tr style="text-align:center;">
-                           <td><h4 style="font-size:200%"><b>SL-168</b></h4></td>
-                           <td><h4 style="font-size:200%"><b>{{getSL168ModelName()}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl168_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl168_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl168_test_block}}</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-162</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>{{getSL162ModelName()}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl162_target}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl162_actual}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl162_test_block}}</b></h4></td>
                         </tr>   
                         <tr style="text-align:center;">
-                           <td><h4 style="font-size:200%"><b>SL-169</b></h4></td>
-                           <td><h4 style="font-size:200%"><b>{{getSL169ModelName()}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl169_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl169_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl169_test_block}}</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-163</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>{{getSL163ModelName()}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl163_target}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl163_actual}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl163_test_block}}</b></h4></td>
                         </tr>   
                         <tr style="text-align:center;">
-                           <td><h4 style="font-size:200%"><b>SL-170</b></h4></td>
-                           <td><h4 style="font-size:200%"><b>{{getSL170ModelName()}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl170_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl170_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl170_test_block}}</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-164</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>{{getSL164ModelName()}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl164_target}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl164_actual}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl164_test_block}}</b></h4></td>
                         </tr>    
                         <tr style="text-align:center;">
-                           <td><h4 style="font-size:200%"><b>SL-166</b></h4></td>
-                           <td><h4 style="font-size:200%"><b>{{getSL166ModelName()}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl166_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl166_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl166_test_block}}</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-171</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>{{getSL171ModelName()}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl171_target}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl171_actual}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl171_test_block}}</b></h4></td>
                         </tr>   
                         <tr style="text-align:center;">
-                           <td><h4 style="font-size:200%"><b>SL-167</b></h4></td>
-                           <td><h4 style="font-size:200%"><b>{{getSL167ModelName()}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl167_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl167_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl167_test_block}}</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-172</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>{{getSL172ModelName()}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl172_target}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl172_actual}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl172_test_block}}</b></h4></td>
                         </tr>   
                         <tr style="text-align:center;">
-                           <td><h4 style="font-size:200%"><b>SL-168</b></h4></td>
-                           <td><h4 style="font-size:200%"><b>{{getSL168ModelName()}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl168_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl168_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl168_test_block}}</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-179</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>{{getSL179ModelName()}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl179_target}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl179_actual}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl179_test_block}}</b></h4></td>
                         </tr>   
                         <tr style="text-align:center;">
-                           <td><h4 style="font-size:200%"><b>SL-169</b></h4></td>
-                           <td><h4 style="font-size:200%"><b>{{getSL169ModelName()}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl169_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl169_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl169_test_block}}</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-180</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>{{getSL180ModelName()}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl180_target}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl180_actual}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl180_test_block}}</b></h4></td>
                         </tr>   
                         <tr style="text-align:center;">
-                           <td><h4 style="font-size:200%"><b>SL-170</b></h4></td>
-                           <td><h4 style="font-size:200%"><b>{{getSL170ModelName()}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl170_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl170_target}}</b></h4></td>
-                           <td><h4 style="font-size:500%"><b>{{$data->sl170_test_block}}</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-181</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>{{getSL181ModelName()}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl181_target}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl181_actual}}</b></h4></td>
+                           <td><h4 style="font-size:500%"><b>{{$data->sl181_test_block}}</b></h4></td>
                         </tr>   
                         @endforeach
                     </tbody>
@@ -105,3 +112,4 @@
          </div>
       </div>
    </div>
+   @endif

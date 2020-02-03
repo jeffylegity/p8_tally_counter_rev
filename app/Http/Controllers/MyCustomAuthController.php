@@ -12,9 +12,24 @@ class MyCustomAuthController extends Controller
       if (Auth::check()) {
 
          if (auth()->user()->role == null) {
-            
-            return redirect()->route('user.home');
+            switch (auth()->user()->area) {
+               
+               case 1:
+                  return redirect()->route('user.home.area1');
+                  break;
+               
+               case 2:
+                  return redirect()->route('user.home.area2');
+                  break;
 
+               case 3:
+                  return redirect()->route('user.home.area3');
+                  break;
+
+               case 4:
+                  return redirect()->route('user.home.area4');
+                  break;
+            }
          } elseif (auth()->user()->role == 1) {
 
             return redirect()->route('admin.home');
