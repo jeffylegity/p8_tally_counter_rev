@@ -1,4 +1,4 @@
-<br><br><br>
+<br><br><br><br>
 @if (getEshiftLatestArea1() == '[]')
     <div class="alert alert-danger" style="background-color:#ff5b5b;color:white;">
        <h1>

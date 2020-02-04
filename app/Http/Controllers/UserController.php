@@ -12,7 +12,7 @@ class UserController extends Controller
    
 //Function for decrementing data
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
-   public function incData($col_selector,$machine_no,$type,$area){
+   public function incData($col_selector,$machine_no,$type,$area,$model){
       switch ($area) {
          case '1':
             $data_tbl_selector = 'slicing_data_area1';
@@ -49,6 +49,7 @@ class UserController extends Controller
             'machine_no'   => $machine_no,
             'action'       => '+1',
             'type'         => $type,
+            'model_output' => $model,
             'created_at'   => now(),
          );
          $insert_logs = DB::table($logs_tbl_selector)->insert($data);
@@ -64,7 +65,7 @@ class UserController extends Controller
 
 //Function for decrementing data
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
-   public function decData($col_selector,$machine_no,$type,$area){
+   public function decData($col_selector,$machine_no,$type,$area,$model){
       switch ($area) {
          case '1':
             $data_tbl_selector = 'slicing_data_area1';
@@ -100,6 +101,7 @@ class UserController extends Controller
             'machine_no'   => $machine_no,
             'action'       => '-1',
             'type'         => $type,
+            'model_output' => $model,
             'created_at'   => now(),
          );
          $insert_logs = DB::table($logs_tbl_selector)->insert($data);

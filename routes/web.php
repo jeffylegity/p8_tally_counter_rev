@@ -17,8 +17,8 @@ Route::get('slicing/common/area2','CommonPageController@slicingCommonPageArea2')
 Route::get('slicing/common/area3','CommonPageController@slicingCommonPageArea3')->name('slicing.common.area3');
 Route::get('slicing/common/area4','CommonPageController@slicingCommonPageArea4')->name('slicing.common.area4');
 Route::get('clear_cache','OptController@clearCache')->name('cache.clear');
-Route::get('increment/{col_selector}/{machine_no}/{type}/{area}', 'UserController@incData')->name('inc_data');
-Route::get('decrement/{col_selector}/{machine_no}/{type}/{area}', 'UserController@decData')->name('dec_data');
+Route::get('increment/{col_selector}/{machine_no}/{type}/{area}/{model}', 'UserController@incData')->name('inc_data');
+Route::get('decrement/{col_selector}/{machine_no}/{type}/{area}/{model}', 'UserController@decData')->name('dec_data');
 
 Auth::routes([
    'register' => false,
