@@ -96,10 +96,10 @@
                                     <h2 style="font-size:400%"><b>{{$data->sl166_actual}}</b></h2>
                                  </center>
                                  <center>
-                                    <a href="{{route('dec_data',['col_selector'=>'sl166_actual','machine_no'=>'SL-166','type'=>'actual','area'=>'1','model'=>getSL166ModelName()])}}" class="btn btn-danger btn-sm">
+                                    <a href="{{route('dec_data',['col_selector'=>'sl166_actual','machine_no'=>'SL-166','type'=>'actual','area'=>'1','model'])}}" class="btn btn-danger btn-sm">
                                        <i class="mdi mdi-minus"></i>
                                     </a>
-                                    <a href="{{route('inc_data',['col_selector'=>'sl166_actual','machine_no'=>'SL-166','type'=>'actual','area'=>'1','model'=>getSL166ModelName()])}}" class="btn btn-primary btn-sm">
+                                    <a href="{{route('inc_data',['col_selector'=>'sl166_actual','machine_no'=>'SL-166','type'=>'actual','area'=>'1','model'])}}" class="btn btn-primary btn-sm">
                                        <i class="mdi mdi-plus"></i>
                                     </a>
                                     <h4><b>SL-166</b></h4>
