@@ -69,7 +69,7 @@ class UserController extends Controller
       switch ($area) {
          case '1':
             $data_tbl_selector = 'slicing_data_area1';
-            $logs_tbl_selector = 'slicing_logs';
+            $logs_tbl_selector = 'slicing_logs_area1';
             break;
 
          case '2':
