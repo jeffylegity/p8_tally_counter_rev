@@ -1,10 +1,14 @@
 <br><br><br><br>
 @if (getEshiftLatestArea1() == '[]')
-    <div class="alert alert-danger" style="background-color:#ff5b5b;color:white;">
-       <h1>
-         Data not yet generated
-       </h1>
-    </div>
+<div class="card-header" style="background-color:#ff5b5b;color:white;">
+   <center>
+      <h4 style="font-size:200%">
+         <b>
+            Data not yet generated
+         </b>
+      </h4>
+   </center>
+</div>
 @else
 <div class="card-header" style="background-color:#034ea2;color:white;">
    <center>
@@ -34,16 +38,12 @@
                     </thead>
                     <tbody>
                         @foreach ($record as $data)
-                        <tr style="text-align:center;">
+                        <tr style="text-align:center;border-bottom:2px solid black;">
                            <td><h4 style="font-size:200%"><b>SL-166</b></h4></td>
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    @if (getSL166ModelName() == null)
-                                       N/A
-                                    @else 
-                                       {{getSL166ModelName()}}
-                                    @endif
+                                    {{getSL166ModelName()}}
                                  </b>
                               </h4>
                            </td>
@@ -75,16 +75,12 @@
                               </h4>
                            </td>
                         </tr>   
-                        <tr style="text-align:center;">
+                        <tr style="text-align:center;border-bottom:2px solid black;">
                            <td><h4 style="font-size:200%"><b>SL-167</b></h4></td>
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    @if (getSL167ModelName() == null)
-                                       N/A
-                                    @else 
-                                       {{getSL167ModelName()}}
-                                    @endif
+                                    {{getSL167ModelName()}}
                                  </b>
                               </h4>
                            </td>
@@ -116,16 +112,12 @@
                               </h4>
                            </td>
                         </tr> 
-                        <tr style="text-align:center;">
+                        <tr style="text-align:center;border-bottom:2px solid black;">
                            <td><h4 style="font-size:200%"><b>SL-168</b></h4></td>
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    @if (getSL168ModelName() == null)
-                                       N/A
-                                    @else 
-                                       {{getSL168ModelName()}}
-                                    @endif
+                                    {{getSL168ModelName()}}
                                  </b>
                               </h4>
                            </td>
@@ -157,16 +149,12 @@
                               </h4>
                            </td>
                         </tr>
-                        <tr style="text-align:center;">
+                        <tr style="text-align:center;border-bottom:2px solid black;">
                            <td><h4 style="font-size:200%"><b>SL-169</b></h4></td>
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    @if (getSL169ModelName() == null)
-                                       N/A
-                                    @else 
-                                       {{getSL169ModelName()}}
-                                    @endif
+                                    {{getSL169ModelName()}}
                                  </b>
                               </h4>
                            </td>
@@ -203,11 +191,7 @@
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    @if (getSL170ModelName() == null)
-                                       N/A
-                                    @else 
-                                       {{getSL170ModelName()}}
-                                    @endif
+                                    {{getSL170ModelName()}}
                                  </b>
                               </h4>
                            </td>

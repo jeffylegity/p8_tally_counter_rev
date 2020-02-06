@@ -7,7 +7,16 @@
                   <thead>
                      <tr style="text-align:center;">
                      <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>M/C#</b></h4></th>
-                     <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>Model</b></h4></th>
+                     <th style="background-color:#00929e;color:white;">
+                        <h4 style="font-size:200%;">
+                           <a href="{{route('admin.models.area2')}}" class="btn btn-success">
+                              <b>
+                                 <i class="mdi mdi-pencil"></i>
+                                 Model
+                              </b>
+                           </a>
+                        </h4>
+                     </th>
                      <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>Plan</b></h4></th>
                      <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>Actual   </b></h4></th>
                      <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>Testblock</b></h4></th>

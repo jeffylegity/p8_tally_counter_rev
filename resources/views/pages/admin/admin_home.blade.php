@@ -23,7 +23,7 @@
                      <div class="card-box">
                         <div>
                            <a href="{{route('admin.save_record.area1',$data->id)}}" class="btn btn-danger"><i class="mdi mdi-content-save"></i> Save Record</a>
-                           <a href="{{route('cache.clear')}}" class="btn btn-primary"><i class="mdi mdi-broom"></i> Clear Cache</a>
+                           <a href="{{route('cache.clear')}}" class="btn" style="background-color:#034ea2;color:white;"><i class="mdi mdi-broom"></i> Clear Cache</a>
                         </div>
                         <div class="form-group">
                            <hr style="border:1px solid black;">

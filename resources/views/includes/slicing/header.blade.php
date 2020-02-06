@@ -77,7 +77,10 @@
   </style> --}}
   <style>
      td{
-        border:2px solid black;
+        border:10px solid black;
+     }
+     h4{
+         white-space:nowrap;
      }
   </style>
   

@@ -6,7 +6,7 @@ use Arrilot\Widgets\AbstractWidget;
 
 class SlicingDataArea2F extends AbstractWidget
 {
-   public $reloadTimeout = 20;
+   public $reloadTimeout = 10;
     /**
      * The configuration array.
      *

@@ -6,7 +6,7 @@
           <div class="row">
             <div class="col-xl-12">
                <div class="card-box">
-                  <h4 class="header-title mt-0 m-b-30">Tally Input Record(s)</h4>
+                  <h4 class="header-title mt-0 m-b-30">Tally Input Record(s) - Area 2</h4>
                   <div class="table-responsive">
                     <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
                       <thead>

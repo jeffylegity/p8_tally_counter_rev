@@ -19,6 +19,7 @@ class CreateSlicingLogsArea3 extends Migration
             $table->string('machine_no');
             $table->string('action');
             $table->string('type');
+            $table->string('model_output');
             $table->dateTime('created_at');
         });
     }

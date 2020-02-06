@@ -133,8 +133,7 @@ function getSL166ModelName(){
       ->where(['id'=>1])
       ->get();
    foreach ($sl166_model_name as $model) {
-      $var = $model->model_name;
-      return $var;
+      return $model->model_name;
    }
 }
 
@@ -181,8 +180,7 @@ function getSL156ModelName(){
       ->where(['id'=>1])
       ->get();
    foreach ($sl156_model_name as $model) {
-      $var = $model->model_name;
-      return $var;
+      return $model->model_name;
    }
 }
 
