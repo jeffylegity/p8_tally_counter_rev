@@ -26,27 +26,11 @@ class HomeController extends Controller
      */
     public function userHomeArea1()
     {
-      //   if(getLastRecord() == true){
-            return view('pages.user.area1_home')->with([
-               //  'last_record'  =>true,
-                'slicing_data' =>getLatestArea1()
-                ]);
-      //   } else {
-      //       return view('pages.user.user_home')->with(['last_record'=>false]);
-      //   }
-
+      return view('pages.user.area1_home');
     }
     public function userHomeArea2()
     {
-      //   if(getLastRecord() == true){
-            return view('pages.user.area2_home')->with([
-               //  'last_record'  =>true,
-                'slicing_data' =>getLatestArea2()
-                ]);
-      //   } else {
-      //       return view('pages.user.user_home')->with(['last_record'=>false]);
-      //   }
-
+      return view('pages.user.area2_home');
     }
     public function userHomeArea3()
     {

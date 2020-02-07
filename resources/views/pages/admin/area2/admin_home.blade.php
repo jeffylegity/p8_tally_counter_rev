@@ -141,7 +141,7 @@
                                        <center>
                                           <h4 style="font-size:200%">
                                              <b>
-                                                (Area 1 - {{$data->shift}} Shift / {{Carbon\Carbon::parse($data->date_generated)->format('M d, Y')}})
+                                                (Area 2 - {{$data->shift}} Shift / {{Carbon\Carbon::parse($data->date_generated)->format('M d, Y')}})
                                              </b>
                                           </h4>
                                        </center>
@@ -153,7 +153,7 @@
                                        <center>
                                           <h4 style="font-size:200%">
                                              <b>
-                                                (Area 1 - {{$data->shift}} Shift / {{Carbon\Carbon::parse($data->date_generated)->format('M d, Y')}})
+                                                (Area 2 - {{$data->shift}} Shift / {{Carbon\Carbon::parse($data->date_generated)->format('M d, Y')}})
                                              </b>
                                           </h4>
                                        </center>

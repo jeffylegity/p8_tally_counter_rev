@@ -48,25 +48,7 @@ Route::group(['middleware' => ['is_admin']], function () {
    Route::post('admin/slicing/update_plan/area2', 'AdminController@updatePlanArea2')->name('admin.update_plan.area2');
    Route::get('admin/generate_record/area2', 'AdminController@generateSlicingRecordArea2')->name('admin.generate_record.area2');
    Route::get('admin/save_record/area2/{data_id}', 'AdminController@saveDataArea2')->name('admin.save_record.area2');
-   // //area 3
-   // Route::get('admin/slicing-input', 'HomeController@adminHome')->name('admin.home');
-   // Route::get('admin/slicing/records', 'AdminController@showRecords')->name('admin.records');
-   // Route::get('admin/slicing/logs/{input_id}', 'AdminController@showLogs')->name('admin.logs');
-   // Route::get('admin/slicing/models', 'AdminController@showModels')->name('admin.models');
-   // Route::post('admin/slicing/update_model_name', 'AdminController@updateModelName')->name('admin.update_model_name');
-   // Route::post('admin/slicing/update_plan', 'AdminController@updatePlan')->name('admin.update_plan');
-   // Route::get('admin/generate_record', 'AdminController@generateSlicingRecord')->name('admin.generate_record');
-   // Route::get('admin/save_record/{data_id}', 'AdminController@saveData')->name('admin.save_record');
-   // //area 4
-   // Route::get('admin/slicing-input', 'HomeController@adminHome')->name('admin.home');
-   // Route::get('admin/slicing/records', 'AdminController@showRecords')->name('admin.records');
-   // Route::get('admin/slicing/logs/{input_id}', 'AdminController@showLogs')->name('admin.logs');
-   // Route::get('admin/slicing/models', 'AdminController@showModels')->name('admin.models');
-   // Route::post('admin/slicing/update_model_name', 'AdminController@updateModelName')->name('admin.update_model_name');
-   // Route::post('admin/slicing/update_plan', 'AdminController@updatePlan')->name('admin.update_plan');
-   // Route::get('admin/generate_record', 'AdminController@generateSlicingRecord')->name('admin.generate_record');
-   // Route::get('admin/save_record/{data_id}', 'AdminController@saveData')->name('admin.save_record');
-   
+
    
    
 });
