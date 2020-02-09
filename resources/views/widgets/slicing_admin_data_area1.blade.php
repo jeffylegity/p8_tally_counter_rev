@@ -29,10 +29,10 @@
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    @if (getSL166ModelName() == null)
+                                    @if (getSlModelArea1(1) == null)
                                        N/A
                                     @else 
-                                       {{getSL166ModelName()}}
+                                       {{getSlModelArea1(1)}}
                                     @endif
                                  </b>
                               </h4>
@@ -70,10 +70,10 @@
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    @if (getSL167ModelName() == null)
+                                    @if (getSlModelArea1(2) == null)
                                        N/A
                                     @else 
-                                       {{getSL167ModelName()}}
+                                       {{getSlModelArea1(2)}}
                                     @endif
                                  </b>
                               </h4>
@@ -111,10 +111,10 @@
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    @if (getSL168ModelName() == null)
+                                    @if (getSlModelArea1(3) == null)
                                        N/A
                                     @else 
-                                       {{getSL168ModelName()}}
+                                       {{getSlModelArea1(3)}}
                                     @endif
                                  </b>
                               </h4>
@@ -152,10 +152,10 @@
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    @if (getSL169ModelName() == null)
+                                    @if (getSlModelArea1(4) == null)
                                        N/A
                                     @else 
-                                       {{getSL169ModelName()}}
+                                       {{getSlModelArea1(4)}}
                                     @endif
                                  </b>
                               </h4>
@@ -193,10 +193,10 @@
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    @if (getSL170ModelName() == null)
+                                    @if (getSlModelArea1(5) == null)
                                        N/A
                                     @else 
-                                       {{getSL170ModelName()}}
+                                       {{getSlModelArea1(5)}}
                                        
                                     @endif
                                  </b>

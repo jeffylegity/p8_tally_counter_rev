@@ -37,7 +37,7 @@
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL156ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea2(1)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl156_target" value="{{$data->sl156_target}}">
                                     </center>
                                     <center>
@@ -46,7 +46,7 @@
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL161ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea2(2)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl161_target" value="{{$data->sl161_target}}">
                                     </center>
                                     <center>
@@ -55,7 +55,7 @@
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL162ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea2(3)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl162_target" value="{{$data->sl162_target}}">
                                     </center>
                                     <center>
@@ -64,7 +64,7 @@
                                  </div>  
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL163ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea2(4)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl163_target" value="{{$data->sl163_target}}">
                                     </center>
                                     <center>
@@ -73,7 +73,7 @@
                                  </div> 
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL164ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea2(5)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl164_target" value="{{$data->sl164_target}}">
                                     </center>
                                     <center>
@@ -86,7 +86,7 @@
                                  <div class="col-lg-2"></div>
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL171ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea2(6)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl171_target" value="{{$data->sl171_target}}">
                                     </center>
                                     <center>
@@ -95,7 +95,7 @@
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL172ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea2(7)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl172_target" value="{{$data->sl172_target}}">
                                     </center>
                                     <center>
@@ -104,7 +104,7 @@
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL179ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea2(8)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl179_target" value="{{$data->sl179_target}}">
                                     </center>
                                     <center>
@@ -113,7 +113,7 @@
                                  </div>  
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL180ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea2(9)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl180_target" value="{{$data->sl180_target}}">
                                     </center>
                                     <center>
@@ -122,7 +122,7 @@
                                  </div> 
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL181ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea2(10)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl181_target" value="{{$data->sl181_target}}">
                                     </center>
                                     <center>

@@ -43,7 +43,7 @@
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    {{getSL166ModelName()}}
+                                    {{getSlModelArea1(1)}}
                                  </b>
                               </h4>
                            </td>
@@ -80,7 +80,7 @@
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    {{getSL167ModelName()}}
+                                    {{getSlModelArea1(2)}}
                                  </b>
                               </h4>
                            </td>
@@ -117,7 +117,7 @@
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    {{getSL168ModelName()}}
+                                    {{getSlModelArea1(3)}}
                                  </b>
                               </h4>
                            </td>
@@ -154,7 +154,7 @@
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    {{getSL169ModelName()}}
+                                    {{getSlModelArea1(4)}}
                                  </b>
                               </h4>
                            </td>
@@ -191,7 +191,7 @@
                            <td>
                               <h4 style="font-size:200%">
                                  <b>
-                                    {{getSL170ModelName()}}
+                                    {{getSlModelArea1(5)}}
                                  </b>
                               </h4>
                            </td>

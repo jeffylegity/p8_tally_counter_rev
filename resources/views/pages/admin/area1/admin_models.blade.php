@@ -47,18 +47,27 @@
                                   <form action="{{route('admin.update_model_name.area1')}}" method="POST">
                                     @csrf
                                     <div class="modal-body">
-                                       <div class="alert alert-danger">
-                                          <p>Note: Input field cannot be empty, Type "NA" if model is not applicable.</p>
-                                       </div>
-                                       <label>Model Name</label>
+                                      <div class="alert alert-danger">
+                                        <p>Note: Select "---" if machine has no model</p>
+                                      </div>
+                                      <label>Model Name</label>
                                       <input type="hidden" name="id" value="{{$model->id}}">
-                                      <input type="text" class="form-control" name="model_name" value="{{$model->model_name}}">
+                                      {{-- <input type="text" class="form-control" name="model_name" value="{{$model->model_name}}"> --}}
+                                      <select name="model_name" id="" class="form-control">
+                                          <option value="---">---</option>
+                                        @foreach ($model_list as $list)
+                                          @if ($model->model_name == $list->model_name)
+                                          <option value="{{$list->model_name}}" selected>{{$list->model_name}}</option>
+                                          @else
+                                          <option value="{{$list->model_name}}">{{$list->model_name}}</option>
+                                          @endif
+                                        @endforeach
+                                      </select>
                                     </div>
                                     <div class="modal-footer">
                                        <button type="submit" class="btn btn-success"><i class="mdi mdi-check"></i> Save</button>
                                     </div>
                                   </form>
-
                                 </div>
                               </div>
                             </div>                        

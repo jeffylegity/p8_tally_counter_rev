@@ -36,7 +36,7 @@
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL166ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea1(1)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl166_target" value="{{$data->sl166_target}}">
                                     </center>
                                     <center>
@@ -45,7 +45,7 @@
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL167ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea1(2)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl167_target" value="{{$data->sl167_target}}">
                                     </center>
                                     <center>
@@ -54,7 +54,7 @@
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL168ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea1(3)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl168_target" value="{{$data->sl168_target}}">
                                     </center>
                                     <center>
@@ -63,7 +63,7 @@
                                  </div>  
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL169ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea1(4)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl169_target" value="{{$data->sl169_target}}">
                                     </center>
                                     <center>
@@ -72,7 +72,7 @@
                                  </div> 
                                  <div class="col-lg-2">
                                     <center>
-                                       <h4><b>{{getSL170ModelName()}}</b></h4>
+                                       <h4><b>{{getSlModelArea1(5)}}</b></h4>
                                        <input type="text" class="form-control" style="text-align:center;font-size:300%;font-weight:bold;color:#212529;" name="sl170_target" value="{{$data->sl170_target}}">
                                     </center>
                                     <center>

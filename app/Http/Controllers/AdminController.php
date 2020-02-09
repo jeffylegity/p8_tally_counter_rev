@@ -88,6 +88,7 @@ class AdminController extends Controller
       return view('pages.admin.area1.admin_models')
       ->with([
          'models' => $models,
+         'model_list'   => getModels()
       ]);
    }
 
@@ -221,7 +222,8 @@ class AdminController extends Controller
       ->get();
       return view('pages.admin.area2.admin_models')
       ->with([
-         'models' => $models,
+         'models'       => $models,
+         'model_list'   => getModels()
       ]);
    }
 
