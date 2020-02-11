@@ -16,7 +16,8 @@
                           <th>Machine No.</th>
                           <th>Input Type</th>
                           <th>Action Taken</th>
-                          <th>View</th>
+                          <th>Model Output</th>
+                          <th>Time</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -26,6 +27,7 @@
                                 <td>{{$log->machine_no}}</td>
                                 <td>{{$log->type}}</td>
                                 <td>{{$log->action}}</td>
+                                <td>{{$log->model_output}}</td>
                                 <td>{{Carbon\Carbon::parse($log->created_at)->format('H:i:A - M d Y')}}</td>
                              </tr>                            
                           @endforeach

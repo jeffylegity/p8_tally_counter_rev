@@ -24,7 +24,7 @@
                                 <td>{{Carbon\Carbon::parse($data->date_generated)->format('H:i:A - M d Y')}}</td>
                                 <td>{{$data->shift}}</td>
                                 <td>
-                                  <a href="{{route('admin.logs.area1',$data->id)}}" class="btn btn-primary"><i class="mdi mdi-eye"></i> Logs</a>
+                                  <a href="{{route('admin.logs.area2',$data->id)}}" class="btn btn-primary"><i class="mdi mdi-eye"></i> Logs</a>
                                </td>
                              </tr>                            
                           @endforeach

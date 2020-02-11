@@ -52,10 +52,10 @@
                         <a href="{{route('admin.area2')}}" class="waves-effect" ><span> Area 2 </span> </a>
                      </li>
                      <li>              
-                        <a href="#" class="waves-effect" ><span> Area 3 </span> </a>
+                        <a href="{{route('admin.area3')}}" class="waves-effect" ><span> Area 3 </span> </a>
                      </li>
                      <li>              
-                        <a href="#" class="waves-effect" ><span> Area 4 </span> </a>
+                        <a href="{{route('admin.area4')}}" class="waves-effect" ><span> Area 4 </span> </a>
                      </li>
                   </ul>
               </li>
@@ -69,10 +69,10 @@
                         <a href="{{route('admin.records.area2')}}" class="waves-effect" ><span> Area 2 </span> </a>
                      </li>
                      <li>              
-                        <a href="#" class="waves-effect" ><span> Area 3 </span> </a>
+                        <a href="{{route('admin.records.area3')}}" class="waves-effect" ><span> Area 3 </span> </a>
                      </li>
                      <li>              
-                        <a href="#" class="waves-effect" ><span> Area 4 </span> </a>
+                        <a href="{{route('admin.records.area4')}}" class="waves-effect" ><span> Area 4 </span> </a>
                      </li>
                   </ul>
                </li>
@@ -86,10 +86,10 @@
                         <a href="{{route('admin.models.area2')}}" class="waves-effect" ><span> Area 2 </span> </a>
                      </li>
                      <li>              
-                        <a href="#" class="waves-effect" ><span> Area 3 </span> </a>
+                        <a href="{{route('admin.models.area3')}}" class="waves-effect" ><span> Area 3 </span> </a>
                      </li>
                      <li>              
-                        <a href="#" class="waves-effect" ><span> Area 4 </span> </a>
+                        <a href="{{route('admin.models.area4')}}" class="waves-effect" ><span> Area 4 </span> </a>
                      </li>
                   </ul>
                </li>

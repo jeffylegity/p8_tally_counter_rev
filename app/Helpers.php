@@ -105,6 +105,15 @@ function getFshiftLatestArea3(){
    return $get_f_latest;
 }
 
+function getSlModelArea3($sl_no){
+   $get_model = DB::table('slicing_model_area3')->select('*')
+      ->where(['id' => $sl_no])
+      ->get();
+   foreach ($get_model as $model) {
+      return $model->model_name;
+   }
+}
+
 //Slicing Area 4
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 function getLatestArea4(){
@@ -131,6 +140,16 @@ function getFshiftLatestArea4(){
 
    return $get_f_latest;
 }
+
+function getSlModelArea4($sl_no){
+   $get_model = DB::table('slicing_model_area4')->select('*')
+      ->where(['id' => $sl_no])
+      ->get();
+   foreach ($get_model as $model) {
+      return $model->model_name;
+   }
+}
+
 
 //Get Shift function
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------

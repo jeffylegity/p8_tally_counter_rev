@@ -14,6 +14,8 @@ class CreateSlicingDataArea3 extends Migration
     public function up()
     {
         Schema::create('slicing_data_area3', function (Blueprint $table) {
+         $table->bigIncrements('id');
+         
          $table->string('sl182_target')->nullable();
          $table->string('sl183_target')->nullable();
          $table->string('sl185_target')->nullable();

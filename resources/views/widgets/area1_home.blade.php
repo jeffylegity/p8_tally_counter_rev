@@ -1,5 +1,10 @@
 @if (getLatestArea1() == '[]')
 <div class="col-xl-12">
+   <div class="alert alert-danger" style="background-color:#034ea2;color:white;text-align:center;">
+      <h1>P8 1st Machining - Area 1</h1>
+   </div>
+</div>
+<div class="col-xl-12">
    <div class="alert alert-danger" style="background-color:#ff5b5b;color:white;">
       Data not generated, Please contact your planner
    </div>

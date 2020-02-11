@@ -17,7 +17,7 @@
                           <th>Input Type</th>
                           <th>Action Taken</th>
                           <th>Model Output</th>
-                          <th>View</th>
+                          <th>Time</th>
                         </tr>
                       </thead>
                       <tbody>

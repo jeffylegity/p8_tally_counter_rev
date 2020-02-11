@@ -24,6 +24,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+    //redirect route for users per area
     public function userHomeArea1()
     {
       return view('pages.user.area1_home');
@@ -34,27 +36,11 @@ class HomeController extends Controller
     }
     public function userHomeArea3()
     {
-      //   if(getLastRecord() == true){
-            return view('pages.user.area1_home')->with([
-               //  'last_record'  =>true,
-                'slicing_data' =>getLatestArea1()
-                ]);
-      //   } else {
-      //       return view('pages.user.user_home')->with(['last_record'=>false]);
-      //   }
-
+      return view('pages.user.area3_home');
     }
     public function userHomeArea4()
     {
-      //   if(getLastRecord() == true){
-            return view('pages.user.area1_home')->with([
-               //  'last_record'  =>true,
-                'slicing_data' =>getLatestArea1()
-                ]);
-      //   } else {
-      //       return view('pages.user.user_home')->with(['last_record'=>false]);
-      //   }
-
+      return view('pages.user.area4_home');
     }
     /**
      * Show the application dashboard.
@@ -62,51 +48,32 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
 
+     //redirect route for admin
     public function adminHome()
     {
-      //   if(getLastRecord() == true){
-            return view('pages.admin.admin_home')->with([
-               //  'last_record'  =>true,
-                'slicing_data' =>getLatestArea1()
-                ]);
-         // } else {
-         //    return view('pages.admin.admin_home')->with(['last_record'=>false]);
-         // }
+      return view('pages.admin.admin_home')->with([
+            'slicing_data' =>getLatestArea1()
+            ]);
     }
 
     public function adminHomeArea2()
     {
-      //   if(getLastRecord() == true){
-            return view('pages.admin.area2.admin_home')->with([
-               //  'last_record'  =>true,
-                'slicing_data' =>getLatestArea2()
-                ]);
-         // } else {
-         //    return view('pages.admin.admin_home')->with(['last_record'=>false]);
-         // }
+      return view('pages.admin.area2.admin_home')->with([
+            'slicing_data' =>getLatestArea2()
+            ]);
     }
 
     public function adminHomeArea3()
     {
-      //   if(getLastRecord() == true){
-            return view('pages.admin.area3.admin_home')->with([
-               //  'last_record'  =>true,
-                'slicing_data' =>getLatestArea3()
-                ]);
-         // } else {
-         //    return view('pages.admin.admin_home')->with(['last_record'=>false]);
-         // }
+      return view('pages.admin.area3.admin_home')->with([
+            'slicing_data' =>getLatestArea3()
+            ]);
     }
 
     public function adminHomeArea4()
     {
-      //   if(getLastRecord() == true){
-            return view('pages.admin.area4.admin_home')->with([
-               //  'last_record'  =>true,
-                'slicing_data' =>getLatestArea4()
-                ]);
-         // } else {
-         //    return view('pages.admin.admin_home')->with(['last_record'=>false]);
-         // }
+      return view('pages.admin.area4.admin_home')->with([
+            'slicing_data' =>getLatestArea4()
+            ]);
     }
 }

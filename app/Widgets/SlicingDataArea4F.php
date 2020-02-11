@@ -4,7 +4,7 @@ namespace App\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
 
-class Area4Home extends AbstractWidget
+class SlicingDataArea4F extends AbstractWidget
 {
    public $reloadTimeout = 10;
     /**
@@ -20,9 +20,11 @@ class Area4Home extends AbstractWidget
      */
     public function run()
     {
-        return view('widgets.area4_home', [
-            'config' => $this->config,
-            'slicing_data' =>getLatestArea4(),
+        //
+
+        return view('widgets.slicing_data_area4_f', [
+            'config'    => $this->config,
+            'record'    =>getFshiftLatestArea4(),
         ]);
     }
 
@@ -30,7 +32,7 @@ class Area4Home extends AbstractWidget
     {
       return[
          'element'   => 'div',
-         'attributes'=> 'class="container-fluid"'
+         'attributes'=> 'class="col-lg-6"'
      ];
     }
 }

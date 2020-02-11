@@ -6,7 +6,7 @@
           <div class="row">
             <div class="col-xl-12">
                <div class="card-box">
-                  <h4 class="header-title mt-0 m-b-30">Input Logs
+                  <h4 class="header-title mt-0 m-b-30">Input Logs - Area 3
                   </h4>
                   <div class="table-responsive">
                     <table id="datatable-buttons" class="table table-striped table-bordered" cellspacing="0" width="100%">
@@ -16,7 +16,8 @@
                           <th>Machine No.</th>
                           <th>Input Type</th>
                           <th>Action Taken</th>
-                          <th>View</th>
+                          <th>Model Output</th>
+                          <th>Time</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -26,6 +27,7 @@
                                 <td>{{$log->machine_no}}</td>
                                 <td>{{$log->type}}</td>
                                 <td>{{$log->action}}</td>
+                                <td>{{$log->model_output}}</td>
                                 <td>{{Carbon\Carbon::parse($log->created_at)->format('H:i:A - M d Y')}}</td>
                              </tr>                            
                           @endforeach

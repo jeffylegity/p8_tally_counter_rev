@@ -1,5 +1,10 @@
 @if (getLatestArea2() == '[]')
 <div class="col-xl-12">
+   <div class="alert alert-danger" style="background-color:#034ea2;color:white;text-align:center;">
+      <h1>P8 1st Machining - Area 2</h1>
+   </div>
+</div>
+<div class="col-xl-12">
    <div class="alert alert-danger" style="background-color:#ff5b5b;color:white;">
       Data not generated, Please contact your planner
    </div>
@@ -38,7 +43,7 @@
                      </div>
                      <div class="col-lg-1">
                         <center>
-                           <h5 style="font-size:120%;"><b>{{getSlModelArea2(1)}}</b></h5>
+                           <h5 style="font-size:120%;white-space:nowrap"><b>{{getSlModelArea2(1)}}</b></h5>
                            <hr style="border:1px solid black;">
                            <h2 style="font-size:400%"><b>{{$data->sl156_target}}</b></h2>
                         </center>
@@ -48,7 +53,7 @@
                      </div>
                      <div class="col-lg-1">
                         <center>
-                           <h5 style="font-size:120%;"><b>{{getSlModelArea2(2)}}</b></h5>
+                           <h5 style="font-size:120%;white-space:nowrap"><b>{{getSlModelArea2(2)}}</b></h5>
                            <hr style="border:1px solid black;">
                            <h2 style="font-size:400%"><b>{{$data->sl161_target}}</b></h2>
                         </center>
@@ -58,7 +63,7 @@
                      </div>
                      <div class="col-lg-1">
                         <center>
-                           <h5 style="font-size:120%;"><b>{{getSlModelArea2(3)}}</b></h5>
+                           <h5 style="font-size:120%;white-space:nowrap"><b>{{getSlModelArea2(3)}}</b></h5>
                            <hr style="border:1px solid black;">
                            <h2 style="font-size:400%"><b>{{$data->sl162_target}}</b></h2>
                         </center>
@@ -68,7 +73,7 @@
                      </div>  
                      <div class="col-lg-1">
                         <center>
-                           <h5 style="font-size:120%;"><b>{{getSlModelArea2(4)}}</b></h5>
+                           <h5 style="font-size:120%;white-space:nowrap"><b>{{getSlModelArea2(4)}}</b></h5>
                            <hr style="border:1px solid black;">
                            <h2 style="font-size:400%"><b>{{$data->sl163_target}}</b></h2>
                         </center>
@@ -78,7 +83,7 @@
                      </div> 
                      <div class="col-lg-1">
                         <center>
-                           <h5 style="font-size:120%;"><b>{{getSlModelArea2(5)}}</b></h5>
+                           <h5 style="font-size:120%;white-space:nowrap"><b>{{getSlModelArea2(5)}}</b></h5>
                            <hr style="border:1px solid black;">
                            <h2 style="font-size:400%"><b>{{$data->sl164_target}}</b></h2>
                         </center>
@@ -88,7 +93,7 @@
                      </div>
                      <div class="col-lg-1">
                         <center>
-                           <h5 style="font-size:120%;"><b>{{getSlModelArea2(6)}}</b></h5>
+                           <h5 style="font-size:120%;white-space:nowrap"><b>{{getSlModelArea2(6)}}</b></h5>
                            <hr style="border:1px solid black;">
                            <h2 style="font-size:400%"><b>{{$data->sl171_target}}</b></h2>
                         </center>
@@ -98,7 +103,7 @@
                      </div>
                      <div class="col-lg-1">
                         <center>
-                           <h5 style="font-size:120%;"><b>{{getSlModelArea2(7)}}</b></h5>
+                           <h5 style="font-size:120%;white-space:nowrap"><b>{{getSlModelArea2(7)}}</b></h5>
                            <hr style="border:1px solid black;">
                            <h2 style="font-size:400%"><b>{{$data->sl172_target}}</b></h2>
                         </center>
@@ -108,7 +113,7 @@
                      </div>
                      <div class="col-lg-1">
                         <center>
-                           <h5 style="font-size:120%;"><b>{{getSlModelArea2(8)}}</b></h5>
+                           <h5 style="font-size:120%;white-space:nowrap"><b>{{getSlModelArea2(8)}}</b></h5>
                            <hr style="border:1px solid black;">
                            <h2 style="font-size:400%"><b>{{$data->sl179_target}}</b></h2>
                         </center>
@@ -118,7 +123,7 @@
                      </div>  
                      <div class="col-lg-1">
                         <center>
-                           <h5 style="font-size:120%;"><b>{{getSlModelArea2(9)}}</b></h5>
+                           <h5 style="font-size:120%;white-space:nowrap"><b>{{getSlModelArea2(9)}}</b></h5>
                            <hr style="border:1px solid black;">
                            <h2 style="font-size:400%"><b>{{$data->sl180_target}}</b></h2>
                         </center>
@@ -128,7 +133,7 @@
                      </div> 
                      <div class="col-lg-1">
                         <center>
-                           <h5 style="font-size:120%;"><b>{{getSlModelArea2(10)}}</b></h5>
+                           <h5 style="font-size:120%;white-space:nowrap"><b>{{getSlModelArea2(10)}}</b></h5>
                            <hr style="border:1px solid black;">
                            <h2 style="font-size:400%"><b>{{$data->sl181_target}}</b></h2>
                         </center>

@@ -16,15 +16,19 @@ class UserController extends Controller
       if ($area == '1') {
          $data_tbl_selector = 'slicing_data_area1';
          $logs_tbl_selector = 'slicing_logs_area1';
+         $logs = getLatestArea1();
       } elseif ($area == '2') {
          $data_tbl_selector = 'slicing_data_area2';
          $logs_tbl_selector = 'slicing_logs_area2';
+         $logs = getLatestArea2();
       } elseif ($area == '3') {
          $data_tbl_selector = 'slicing_data_area3';
          $logs_tbl_selector = 'slicing_logs_area3';
+         $logs = getLatestArea3();
       } elseif ($area == '4') {
          $data_tbl_selector = 'slicing_data_area4';
          $logs_tbl_selector = 'slicing_logs_area4';
+         $logs = getLatestArea4();
       }
 
       $fetch = DB::table($data_tbl_selector)->select($col_selector)
@@ -36,7 +40,6 @@ class UserController extends Controller
          ]);
       }
 
-      $logs = getLatestArea1();
       foreach ($logs as $log) {
          $data = array(
             'data_id'      => $log->id,
@@ -64,21 +67,25 @@ class UserController extends Controller
          case '1':
             $data_tbl_selector = 'slicing_data_area1';
             $logs_tbl_selector = 'slicing_logs_area1';
+            $logs = getLatestArea1();
          break;
 
          case '2':
             $data_tbl_selector = 'slicing_data_area2';
             $logs_tbl_selector = 'slicing_logs_area2';
+            $logs = getLatestArea2();
          break;
 
          case '3':
             $data_tbl_selector = 'slicing_data_area3';
             $logs_tbl_selector = 'slicing_logs_area3';
+            $logs = getLatestArea3();
          break;
 
          case '4':
             $data_tbl_selector = 'slicing_data_area4';
-            $logs_tbl_selector = 'slicing_logs_area4'; 
+            $logs_tbl_selector = 'slicing_logs_area4';
+            $logs = getLatestArea4(); 
          break;
       }
 
@@ -90,8 +97,7 @@ class UserController extends Controller
             $col_selector => $data_inc,
          ]);
       }
-
-      $logs = getLatestArea1();
+      
       foreach ($logs as $log) {
          $data = array(
             'data_id'      => $log->id,

@@ -99,7 +99,7 @@ class AdminController extends Controller
 
       if (!$update_model_name) {
          toastr()->error('Model name not updated, Please Contact MIS');
-         return redirect()->route('admin.models');
+         return redirect()->route('admin.models.area1');
       } else {
          toastr()->success('Model name updated');
          return redirect()->back();
@@ -234,7 +234,7 @@ class AdminController extends Controller
 
       if (!$update_model_name) {
          toastr()->error('Model name not updated, Please Contact MIS');
-         return redirect()->route('admin.models');
+         return redirect()->route('admin.models.area2');
       } else {
          toastr()->success('Model name updated');
          return redirect()->back();
@@ -284,9 +284,9 @@ class AdminController extends Controller
          'sl186_target'        =>0,
          'sl186_test_block'    =>0,
 
-         'lap80_actual'        =>0,
-         'lap80_target'        =>0,
-         'lap80_test_block'    =>0,
+         'lap20_actual'        =>0,
+         'lap20_target'        =>0,
+         'lap20_test_block'    =>0,
 
          'lap23_actual'        =>0,
          'lap23_target'        =>0,
@@ -372,7 +372,7 @@ class AdminController extends Controller
 
       if (!$update_model_name) {
          toastr()->error('Model name not updated, Please Contact MIS');
-         return redirect()->route('admin.models');
+         return redirect()->route('admin.models.area3');
       } else {
          toastr()->success('Model name updated');
          return redirect()->back();
@@ -387,7 +387,7 @@ class AdminController extends Controller
          'sl183_target'=>$request->input('sl183_target'),
          'sl185_target'=>$request->input('sl185_target'),
          'sl186_target'=>$request->input('sl186_target'),
-         'lap80_target'=>$request->input('lap80_target'),
+         'lap20_target'=>$request->input('lap20_target'),
          'lap23_target'=>$request->input('lap23_target'),
          'lap27_target'=>$request->input('lap27_target'),
          'bc8_target'=>$request->input('bc8_target'),
@@ -510,7 +510,7 @@ class AdminController extends Controller
 
       if (!$update_model_name) {
          toastr()->error('Model name not updated, Please Contact MIS');
-         return redirect()->route('admin.models');
+         return redirect()->route('admin.models.area4');
       } else {
          toastr()->success('Model name updated');
          return redirect()->back();
